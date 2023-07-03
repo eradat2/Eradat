@@ -13303,3 +13303,10 @@ ol.commentlist li::after {
 .ar-navbar {
   padding-right: 100px;
 }
+
+/* for arabic version of login portal */
+
+.ar-login-portal {
+  margin: 150px 0 0 0;
+  padding-right: 150px;
+}
