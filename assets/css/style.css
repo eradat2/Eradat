@@ -13297,3 +13297,9 @@ ol.commentlist li::after {
 .wt-icon-box-wraper .left .bdr-1 .bdr-gray-dark .p-tb15 .p-lr10 .clearfix {
   margin: 150px 0 0 150px;
 }
+
+/* for arabic version */
+
+.ar-navbar {
+  padding-right: 100px;
+}
