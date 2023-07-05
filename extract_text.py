@@ -13,5 +13,5 @@ def extract_text(file_name):
     return text
 
 if __name__ == "__main__":
-    text = extract_text("ibn Khaldoun Complex.html")
+    text = extract_text("Project-element-1_ar.html")
     print(text)
