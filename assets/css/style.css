@@ -13310,3 +13310,44 @@ ol.commentlist li::after {
   margin: 150px 0 0 0;
   padding-right: 150px;
 }
+
+/* for removing the carousel from the video banner */
+
+.custom-banner-heading {
+  position: relative;
+  display: block;
+  color: #fff;
+  font-size: 68px;
+  line-height: 70px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  opacity: 0;
+  -webkit-transform: translateY(100px);
+  -moz-transform: translateY(100px);
+  -ms-transform: translateY(100px);
+  -o-transform: translateY(100px);
+  transform: translateY(100px);
+  -webkit-transition: all 700ms ease;
+  -moz-transition: all 700ms ease;
+  -ms-transition: all 700ms ease;
+  -o-transition: all 700ms ease;
+  transition: all 700ms ease;
+}
+
+.custom-banner-heading.active {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+  -webkit-transition-delay: 500ms;
+  -moz-transition-delay: 500ms;
+  -ms-transition-delay: 500ms;
+  -o-transition-delay: 500ms;
+  transition-delay: 500ms;
+}
+
+.custom-banner-heading.banner-section.style-three {
+  margin-bottom: 18px;
+}
