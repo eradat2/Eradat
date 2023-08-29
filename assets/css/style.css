@@ -81,6 +81,15 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+@font-face {
+  font-family: 'noto_kufi_arabicregular';
+  src: url('notokufiarabic-variablefont_wght-webfont.woff2') format('woff2'),
+       url('notokufiarabic-variablefont_wght-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
   @media (min-width:1200px) {
   .container {
     max-width: 1170px;
