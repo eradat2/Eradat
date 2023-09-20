@@ -914,3 +914,5 @@ $(document).ready(function() {
   
 	loadContent(file);
   }
+
+  $('.slick-slider').slick();
