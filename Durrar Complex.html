@@ -26,6 +26,20 @@
 <link href="assets/css/responsive.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.11.1/slick/slick.css">
 
+<!-- Vendors CSS -->
+    <link rel="stylesheet" href="css/themes.css">
+    <link rel="stylesheet" href="vendors/fontawesome-pro-5/css/all.css">
+    <link rel="stylesheet" href="vendors/bootstrap-select/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="vendors/slick/slick.min.css">
+    <link rel="stylesheet" href="vendors/magnific-popup/magnific-popup.min.css">
+    <link rel="stylesheet" href="vendors/jquery-ui/jquery-ui.min.css">
+    <link rel="stylesheet" href="vendors/chartjs/Chart.min.css">
+    <link rel="stylesheet" href="vendors/dropzone/css/dropzone.min.css">
+    <link rel="stylesheet" href="vendors/animate.css">
+    <link rel="stylesheet" href="vendors/timepicker/bootstrap-timepicker.min.css">
+    <link rel="stylesheet" href="vendors/mapbox-gl/mapbox-gl.min.css">
+    <link rel="stylesheet" href="vendors/dataTables/jquery.dataTables.min.css">
+
 </head>
 
 <!-- page wrapper -->
@@ -101,18 +115,98 @@
     <!-- End Mobile Menu -->
 
     <!--Page Title-->
-    <section class="page-title centred" style="background-color: #9b8579;">
-      <div class="auto-container">
-          <div class="content-box clearfix">
-              <h1>Investment Properties</h1>
-              <ul class="bread-crumb clearfix">
-                  <li><a href="index.html">Home</a></li>
-                  <li>Properties</li>
-                  <li>Darrar Complex</li>
-              </ul>
-          </div>
-      </div>
-  </section>
+    <section class="shadow-5">
+        <div class="container">
+            <ul class="nav nav-pills z-index-3 nav-gallery justify-content-end mb-n10 position-relative mr-n2"
+                id="pills-tab"
+                role="tablist">
+                <li class="nav-item mr-2" role="presentation">
+                    <a class="nav-link p-0 active d-flex align-items-center justify-content-center w-48px h-48 bg-white text-heading bg-hover-primary hover-white rounded-circle fs-18"
+                       data-toggle="pill" href="#image" role="tab"
+                       aria-selected="true">
+                        <i class="fal fa-camera"></i>
+                    </a>
+                </li>
+                <li class="nav-item mr-2" role="presentation">
+                    <a class="nav-link p-0 d-flex align-items-center justify-content-center w-48px h-48 bg-white text-heading bg-hover-primary hover-white rounded-circle fs-18"
+                       data-toggle="pill" href="#map-view" role="tab"
+                       aria-selected="false">
+                        <i class="fal fa-map-marked-alt"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="tab-content p-0 shadow-none">
+            <div class="tab-pane fade show active" id="image" role="tabpanel">
+                {% for property in site.data.single-property-5.properties-05 %}
+                    <div style="background-image: url('{{ property.image | document_url }}')" class="pt-17 pb-10 bg-cover">
+                        <div class="container">
+                            <h2 class="mb-3 pt-lg-17 mt-17"><a href="{{ assets\Images-Eradat\Properties_Images\Darrar_Complex\Darar-complex-1.jpg }}" class="fs-48 fs-md-64 font-weight-bold text-white hover-primary">{{ property.title }}</a></h2>
+                            <p class="fs-18 text-white mb-0">{{ property.des }}</p>
+                            <p class="fs-34 font-weight-bold text-white mb-lg-1">{{ property.price }} <span class="fs-15 text-white font-weight-normal">{{ property.acreage }}</span></p>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+            <div class="tab-pane fade" id="map-view" role="tabpanel">
+                <div id="map-01" style="height:720px;" class="mapbox-gl"
+                     data-mapbox-access-token="{{ site.data.map-access-token.access-token}}"
+                     data-mapbox-options='{"center":[-73.981566, 40.739011],"setLngLat":[-73.981566, 40.739011],"container":"map-01"}'>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pt-xl-12 pb-xl-10 py-11">
+        <div class="container">
+            <div class="row flex-md-row flex-column-reverse">
+                <div class="col-md-2">
+                    <ul class="list-inline mb-0 d-lg-flex flex-lg-column pt-md-9 pt-6">
+                        <li class="list-inline-item mr-2 mb-lg-2">
+                            <a href="#" class="w-52px h-52 rounded-circle text-body bg-hover-primary hover-white d-flex align-items-center justify-content-center border border-hover-primary"><i class="fab fa-twitter fs-18"></i></a>
+                        </li>
+                        <li class="list-inline-item mr-2 mb-lg-2">
+                            <a href="#" class="w-52px h-52 rounded-circle text-body bg-hover-primary hover-white d-flex align-items-center justify-content-center border border-hover-primary"><i class="fab fa-facebook-f fs-18"></i></a>
+                        </li>
+                        <li class="list-inline-item mr-2 mb-lg-2">
+                            <a href="#" class="w-52px h-52 rounded-circle text-body bg-hover-primary hover-white d-flex align-items-center justify-content-center border border-hover-primary">
+                                <i class="fab fa-instagram fs-18"></i></a>
+                        </li>
+                        <li class="list-inline-item mr-2 mb-lg-2">
+                            <a href="#" class="w-52px h-52 rounded-circle text-body bg-hover-primary hover-white d-flex align-items-center justify-content-center border border-hover-primary"><i class="fab fa-linkedin-in fs-18"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xl-8 col-md-10">
+                    <h2 class="fs-md-35 fs-30 font-weight-600 text-heading lh-15 mb-6">Insight Lux Villa’s innovative range of modular build homes,
+                        and Mansion House are the first apartments in the range. </h2>
+                    <p class="lh-214 mb-3">Massa tempor nec feugiat nisl pretium. Egestas fringilla phasellus faucibus scelerisque eleifend donec. Porta
+                        nibh venenatis cras sed felis eget velit aliquet. Neque volutpat ac tincidunt vitae semper quis lectus. Turpis
+                        in eu mi bibendum neque egestas congue quisque. Sed elementum tempus egestas sed sed risus pretium quam.
+                        Dignissim sodales ut eu sem. Nibh mauris cursus mattis</p>
+                    <div class="pt-6 border-bottom">
+                        <h4 class="fs-22 text-heading mb-6">Facts and Features</h4>
+                        <div class="row">
+                            {% for box in site.data.single-property-5.info-box %}
+                            <div class="col-lg-3 col-sm-4 mb-6">
+                                <div class="media">
+                                    <div class="p-2 shadow-xxs-1 rounded-lg mr-2">
+                                        <svg class="icon icon-{{ box.icon }} fs-32 text-primary"><use xlink:href="#icon-{{ box.icon }}"></use></svg>
+                                    </div>
+                                    <div class="media-body">
+                                        <h5 class="my-1 fs-14 text-uppercase letter-spacing-093 font-weight-normal">{{ box.title }}</h5>
+                                        <p class="mb-0 fs-13 font-weight-bold text-heading">{{ box.sub-title }}</p>
+                                    </div>
+                                </div>
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
     <!--End Page Title-->
 
     <!--Begin Page Content-->
@@ -176,28 +270,6 @@
                                   </div>
                               </div>
                           </div>
-                      </div>
-                  </div>
-              </div>
-              <div class="col-lg-4 col-md-12 col-sm-12 sidebar-side">
-                  <div class="service-sidebar">
-                      <div class="sidebar-categories">
-                          <ul class="categories-list clearfix">
-                              <li><a href="#" class="active">Darrar Complex</a></li>
-                              <li><a href="#">Farwaniya</a></li>
-                              <li><a href="#">Bneid Al Gar Medical Center</a></li>
-                              <li><a href="#">Domus </a></li>
-                              <li><a href="#">Al Manar Complex</a></li>
-                          </ul>
-                      </div>
-                      <div class="download-option">
-                          <div class="sidebar-title">
-                              <h3>Downloads</h3>
-                          </div>
-                          <ul class="download-file clearfix">
-                              <li><a href="financial-analysis.html"><i class="fas fa-file-pdf"></i>Presentation PDF</a></li>
-                              <li><a href="financial-analysis.html"><i class="fas fa-file"></i>Brochure DOC</a></li>
-                          </ul>
                       </div>
                   </div>
               </div>
