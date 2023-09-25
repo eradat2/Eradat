@@ -165,26 +165,26 @@ sup {
   top: -.5em;
 }
 
-a {
+/* a {
   color: #0ec6d5;
   text-decoration: none;
   background-color: transparent;
 }
 
-a:hover {
+/* a:hover {
   color: #09838d;
   text-decoration: underline;
-}
+} */ */
 
 a:not([href]) {
   color: inherit;
   text-decoration: none;
 }
 
-a:not([href]):hover {
+/* a:not([href]):hover {
   color: inherit;
   text-decoration: none;
-}
+} */
 
 pre,
 code,
@@ -1951,55 +1951,6 @@ pre code {
   background-color: rgba(0, 0, 0, 0.05);
 }
 
-.table-hover tbody tr:hover {
-  color: #696969;
-  background-color: rgba(0, 0, 0, 0.075);
-}
-
-.table-primary,
-.table-primary > th,
-.table-primary > td {
-  background-color: #bceff3;
-}
-
-.table-primary th,
-.table-primary td,
-.table-primary thead th,
-.table-primary tbody + tbody {
-  border-color: #82e1e9;
-}
-
-.table-hover .table-primary:hover {
-  background-color: #a6eaef;
-}
-
-.table-hover .table-primary:hover > td,
-.table-hover .table-primary:hover > th {
-  background-color: #a6eaef;
-}
-
-.table-secondary,
-.table-secondary > th,
-.table-secondary > td {
-  background-color: #c0c0dd;
-}
-
-.table-secondary th,
-.table-secondary td,
-.table-secondary thead th,
-.table-secondary tbody + tbody {
-  border-color: #8a89c0;
-}
-
-.table-hover .table-secondary:hover {
-  background-color: #afafd4;
-}
-
-.table-hover .table-secondary:hover > td,
-.table-hover .table-secondary:hover > th {
-  background-color: #afafd4;
-}
-
 .table-success,
 .table-success > th,
 .table-success > td {
@@ -2011,37 +1962,6 @@ pre code {
 .table-success thead th,
 .table-success tbody + tbody {
   border-color: #8fd19e;
-}
-
-.table-hover .table-success:hover {
-  background-color: #b1dfbb;
-}
-
-.table-hover .table-success:hover > td,
-.table-hover .table-success:hover > th {
-  background-color: #b1dfbb;
-}
-
-.table-info,
-.table-info > th,
-.table-info > td {
-  background-color: #bee5eb;
-}
-
-.table-info th,
-.table-info td,
-.table-info thead th,
-.table-info tbody + tbody {
-  border-color: #86cfda;
-}
-
-.table-hover .table-info:hover {
-  background-color: #abdde5;
-}
-
-.table-hover .table-info:hover > td,
-.table-hover .table-info:hover > th {
-  background-color: #abdde5;
 }
 
 .table-warning,
