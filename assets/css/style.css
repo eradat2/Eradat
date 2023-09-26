@@ -13380,7 +13380,7 @@ ol.commentlist li::after {
 
 .custom-header {
   z-index: 5;
-  font-family: 'Helvetica Neue', sans-serif;
+  font-family: 'lato', sans-serif;
   visibility: visible;
   text-align: left;
   line-height: 1.6em;
@@ -13409,12 +13409,56 @@ ol.commentlist li::after {
   left: 60px;
 }
 
+/* Right-to-Left (RTL) Custom Header */
+.custom-header-rtl {
+  z-index: 5;
+  font-family: 'lato', sans-serif;
+  visibility: visible;
+  text-align: right; /* Adjust text alignment to right for RTL */
+  line-height: 1.6em;
+  letter-spacing: 0px;
+  font-weight: 400;
+  font-size: 0.5em;
+  border-color: rgb(92, 92, 92);
+  border-style: none;
+  margin: 0px;
+  border-radius: 0px;
+  padding: 0px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  white-space: nowrap;
+  width: 100%;
+  height: auto;
+  min-height: 0px;
+  min-width: 0px;
+  max-height: none;
+  max-width: none;
+  opacity: 1;
+  transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+  transform-origin: 50% 50% 0px;
+  position: absolute;
+  bottom: 90px;
+  left: auto; /* Adjust the left property to 'auto' for RTL */
+  right: 60px; /* Adjust the right property for RTL */
+}
+
+
 /* Media query to apply different CSS styles to the header on small screens */
 @media screen and (max-width: 768px) {
   .custom-header {
     width: 25%;
     font-size: 0.40em;
   }
+}
+
+
+
+.custom-header-ar {
+  text-align: right;
+  left: auto;
+  right: 60px;
+  font-family: 'Noto Kufi Arabic', sans-serif;
+  font-size: 0.5em;
 }
 
 /* Custom class for the subtitle */
@@ -13455,6 +13499,38 @@ ol.commentlist li::after {
     width: 50%;
     font-size: 0.25em;
   }
+}
+
+.custom-subtitle-rtl {
+  z-index: 5;
+  font-family: 'Helvetica Neue', sans-serif;
+  visibility: visible;
+  text-align: right; /* Adjust text alignment to right for RTL */
+  line-height: 0.6em; /* Adjust the line height as needed */
+  letter-spacing: 0px;
+  font-weight: 300;
+  font-size: 0.25em; /* Adjust the font size as needed */
+  border-color: rgb(92, 92, 92);
+  border-style: none;
+  margin: 0px;
+  border-radius: 0px;
+  padding: 0px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  white-space: nowrap;
+  width: 100%;
+  height: auto;
+  min-height: 0px;
+  min-width: 0px;
+  max-height: none;
+  max-width: none;
+  opacity: 1;
+  transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+  transform-origin: 50% 50% 0px;
+  position: absolute;
+  bottom: 60px;
+  left: auto; /* Adjust the left property to 'auto' for RTL */
+  right: 60px; /* Adjust the right property for RTL */
 }
 
 .perpendicular-line {
