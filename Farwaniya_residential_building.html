@@ -26,6 +26,9 @@
     <link rel="stylesheet" href="assets/Properties_styling/vendors/slick/slick.min.css">
     <link rel="stylesheet" href="assets/Properties_styling/vendors/magnific-popup/magnific-popup.min.css">
     <link rel="stylesheet" href="assets/Properties_styling/vendors/animate.css">
+
+    <!-- Lightbox for Image gallery -->
+    <link href="assets/lightbox.js-0.0.6/lightbox/lightbox.css" rel="stylesheet">
     
     <!-- Themes core CSS -->
     <link rel="stylesheet" href="assets/Properties_styling/css/themes.css">
@@ -43,12 +46,10 @@
               <img src="assets/Images-Eradat/Logo/Eradat_logos_-_black_and_white_-_121_by_129-removebg-preview.png" alt="Image" id="logo">
             </a>
           </div>
-    
           <!-- Mobile Navigation Toggler -->
           <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right mobile-nav-toggler">
             <i class="fa fa-bars"></i>
           </button>
-    
           <div id="navbarSupportedContent" class="collapse navbar-collapse">
             <ul class="navbar-nav ml-auto main-menu">
               <li class="nav-item active"><a href="index.html" class="nav-link text-uppercase font-weight-bold">Home <span class="sr-only">(current)</span></a></li>
@@ -94,7 +95,7 @@
                   <div class="col-sm-6 col-lg-6 mb-6">
                     <div class="item item-size-4-3">
                       <div class="card p-0 hover-zoom-in">
-                        <a href="assets/Images-Eradat/Properties_Images/Farwaniya_residential_building/Farwaniya_residential_3.jpg" class="card-img"
+                        <a href="assets/Images-Eradat/Properties_Images/Farwaniya_residential_building/Farwaniya_residential_3.jpg" data-lightbox="gallery" data-image-alt="Image 1" class="card-img"
                           data-gtf-mfp="true"
                           data-gallery-id="05">
                           <img src="assets/Images-Eradat/Properties_Images/Farwaniya_residential_building/Farwaniya_residential_3.jpg" alt="">
@@ -159,14 +160,14 @@
                   </div>
                   <div class="media-body">
                     <h5 class="my-1 fs-14 text-uppercase letter-spacing-093 font-weight-normal">Year built</h5>
-                    <p class="mb-0 fs-13">1979</p>
+                    <p class="mb-0 fs-13">NA</p>
                   </div>
                 </div>
               </div>
               <div class="col-lg-3 col-sm-4 mb-6">
                 <div class="media">
                   <div class="p-2 shadow-xxs-1 rounded-lg mr-2">
-                    <svg class="icon icon-heating fs-32 text-primary"><use xlink:href="#icon-heating"></use></svg>
+                    <svg class="icon icon-heating fs-32 text-primary"><use xlink:href="#icon-f1"></use></svg>
                   </div>
                   <div class="media-body">
                     <h5 class="my-1 fs-14 text-uppercase letter-spacing-093 font-weight-normal">Road access</h5>
@@ -181,7 +182,7 @@
                   </div>
                   <div class="media-body">
                     <h5 class="my-1 fs-14 text-uppercase letter-spacing-093 font-weight-normal">Plot Area</h5>
-                    <p class="mb-0 fs-13">4,000 sqm</p>
+                    <p class="mb-0 fs-13">1,011 sqm</p>
                   </div>
                 </div>
               </div>
@@ -282,6 +283,9 @@
     <script src="vendors/dataTables/jquery.dataTables.min.js"></script>
     <!-- Theme scripts -->
     <script src="js/theme.js"></script>
+
+    <!-- javascript for lightbox library -->
+    <link href="assets/lightbox.js-0.0.6/lightbox/lightbox.min.js" rel="stylesheet">
     
     <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1"
     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
