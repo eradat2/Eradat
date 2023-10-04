@@ -53,8 +53,8 @@
 
   <!-- main header -->
   <header class="main-header style-one style-six">
-      <nav class="navbar navbar-expand-lg fixed-top py-3">
-        <div class="container">
+      <nav class="navbar navbar-margin navbar-expand-lg fixed-top py-3">
+        <div class="container-fluid">
           <div class="mobile-logo">
             <a href="index.html">
               <img src="assets/Images-Eradat/Logo/Eradat_logos_-_black_and_white_-_121_by_129-removebg-preview.png" alt="Image" id="logo">
@@ -149,25 +149,29 @@
               <!-- Images container div -->
               <div class="row">
                 <div class="col-sm-6 col-lg-6 mb-6">
-                  <div class="item item-size-4-3">
-                    <div class="card p-0 hover-zoom-in">
-                      <a href="assets/Images-Eradat/Properties_Images/Domus/Domus_aqarat.jpg" class="card-img"
-                        data-gtf-mfp="true"
-                        data-gallery-id="05">
-                        <img src="assets/Images-Eradat/Properties_Images/Domus/Domus_aqarat.jpg" alt="">
-                      </a>
-                    </div>
+                  <div class="column item item-size-4-3 card p-0 hover-zoom-in card-img">
+                    <img src="assets/Images-Eradat/Properties_Images/Domus/Domus_aqarat.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
                   </div>
                 </div>
                 <div class="col-sm-6 col-lg-6 mb-6">
-                  <div class="item item-size-4-3">
-                    <div class="card p-0 hover-zoom-in">
-                      <a href="assets/Images-Eradat/Properties_Images/Domus/Domus_1.jpg" class="card-img"
-                        data-gtf-mfp="true"
-                        data-gallery-id="05">
-                        <img src="assets/Images-Eradat/Properties_Images/Domus/Domus_1.jpg" alt="" style="height: 350px;">
-                      </a>
+                  <div class="column item item-size-4-3 card p-0 hover-zoom-in card-img">
+                    <img src="assets/Images-Eradat/Properties_Images/Domus/Domus_1.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+                  </div>
+                </div>
+                <div id="myModal" class="modal">
+                  <span class="close cursor" onclick="closeModal()">&times;</span>
+                  <div class="modal-content">
+                    <div class="mySlides ">
+                      <div class="numbertext">1 / 2</div>
+                      <img src="assets/Images-Eradat/Properties_Images/Domus/Domus_aqarat.jpg" style="width:100%">
                     </div>
+                    <div class="mySlides">
+                      <div class="numbertext">2 / 2</div>
+                      <img src="assets/Images-Eradat/Properties_Images/Domus/Domus_1.jpg" style="width:100%">
+                    </div>
+                    <!-- Next/previous controls -->
+                    <a class="prev-ar" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next-ar" onclick="plusSlides(1)">&#10095;</a>
                   </div>
                 </div>
               </div>

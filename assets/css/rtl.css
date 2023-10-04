@@ -1706,3 +1706,35 @@ body.rtl .demo-ltr{
   margin-right: 22px !important;
   margin-left: 0px;
 }
+
+.prev-ar,
+.next-ar {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.next-ar {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev-ar {
+  right: 0;
+  border-radius: 0 3px 3px 0;
+}
+
+.prev-ar:hover,
+.next-ar:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}

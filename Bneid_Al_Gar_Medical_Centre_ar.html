@@ -152,47 +152,47 @@
               <!-- Images container div -->
               <div class="row">
                 <div class="col-sm-6 col-lg-6 mb-6">
-                  <div class="item item-size-4-3">
-                    <div class="card p-0 hover-zoom-in">
-                      <a href="assets/Images-Eradat/Properties_Images/Bneid_al_gar/Bneid_al_gar_frontal_view.jpeg" class="card-img"
-                        data-gtf-mfp="true"
-                        data-gallery-id="05">
-                        <img src="assets/Images-Eradat/Properties_Images/Bneid_al_gar/Bneid_al_gar_frontal_view.jpeg" alt="">
-                      </a>
-                    </div>
+                  <div class="column item item-size-4-3 card p-0 hover-zoom-in card-img">
+                    <img src="assets/Images-Eradat/Properties_Images/Bneid_al_gar/Bneid_al_gar_frontal_view.jpeg" onclick="openModal();currentSlide(1)" class="hover-shadow">
                   </div>
                 </div>
                 <div class="col-sm-6 col-lg-6 mb-6">
-                  <div class="item item-size-4-3">
-                    <div class="card p-0 hover-zoom-in">
-                      <a href="assets/Images-Eradat/Properties_Images/Bneid_al_gar/Bneid_al_gar_elevator_view.jpg" class="card-img"
-                        data-gtf-mfp="true"
-                        data-gallery-id="05">
-                        <img src="assets/Images-Eradat/Properties_Images/Bneid_al_gar/Bneid_al_gar_elevator_view.jpg" alt="">
-                      </a>
-                    </div>
+                  <div class="column item item-size-4-3 card p-0 hover-zoom-in card-img">
+                    <img src="assets/Images-Eradat/Properties_Images/Bneid_al_gar/Bneid_al_gar_elevator_view.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
                   </div>
                 </div>
                 <div class="col-sm-6 col-lg-6 mb-6">
-                  <div class="item item-size-4-3">
-                    <div class="card p-0 hover-zoom-in">
-                      <a href="assets/Images-Eradat/Properties_Images/Bneid_al_gar/Bneid_al_gar_lobby_view_7.jpg" class="card-img"
-                        data-gtf-mfp="true"
-                        data-gallery-id="05">
-                        <img src="assets/Images-Eradat/Properties_Images/Bneid_al_gar/Bneid_al_gar_lobby_view_7.jpg" alt="">
-                      </a>
-                    </div>
+                  <div class="column item item-size-4-3 card p-0 hover-zoom-in card-img">
+                    <img src="assets/Images-Eradat/Properties_Images/Bneid_al_gar/Bneid_al_gar_lobby_view_7.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
                   </div>
                 </div>
                 <div class="col-sm-6 col-lg-6 mb-6">
-                  <div class="item item-size-4-3">
-                    <div class="card p-0 hover-zoom-in">
-                      <a href="assets/Images-Eradat/Properties_Images/Bneid_al_gar/Bneid_al_gar_medical_centre_entrance.jpg" class="card-img"
-                        data-gtf-mfp="true"
-                        data-gallery-id="05">
-                        <img src="assets/Images-Eradat/Properties_Images/Bneid_al_gar/Bneid_al_gar_medical_centre_entrance.jpg" alt="">
-                      </a>
+                  <div class="column item item-size-4-3 card p-0 hover-zoom-in card-img">
+                    <img src="assets/Images-Eradat/Properties_Images/Bneid_al_gar/Bneid_al_gar_medical_centre_entrance.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+                  </div>
+                </div>
+                <div id="myModal" class="modal">
+                  <span class="close cursor" onclick="closeModal()">&times;</span>
+                  <div class="modal-content">
+                    <div class="mySlides ">
+                      <div class="numbertext">1 / 4</div>
+                      <img src="assets/Images-Eradat/Properties_Images/Bneid_al_gar/Bneid_al_gar_frontal_view.jpeg" style="width:100%">
                     </div>
+                    <div class="mySlides">
+                      <div class="numbertext">2 / 4</div>
+                      <img src="assets/Images-Eradat/Properties_Images/Bneid_al_gar/Bneid_al_gar_elevator_view.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlides">
+                      <div class="numbertext">3 / 4</div>
+                      <img src="assets/Images-Eradat/Properties_Images/Bneid_al_gar/Bneid_al_gar_lobby_view_7.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlides">
+                      <div class="numbertext">4 / 4</div>
+                      <img src="assets/Images-Eradat/Properties_Images/Bneid_al_gar/Bneid_al_gar_medical_centre_entrance.jpg" style="width:100%">
+                    </div>
+                    <!-- Next/previous controls -->
+                    <a class="prev-ar" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next-ar" onclick="plusSlides(1)">&#10095;</a>
                   </div>
                 </div>
               </div>

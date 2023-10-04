@@ -919,43 +919,70 @@ $(document).ready(function() {
 
 //   for lightbox
 
-// Open the Modal
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Function to open the modal
 function openModal() {
-	document.getElementById("myModal").style.display = "block";
+  document.getElementById("myModal").style.display = "block";
+
+  // Add event listener for the Escape key to close the modal
+  document.addEventListener("keydown", closeModal);
+
+  // Add event listeners for left and right arrow keys
+  document.addEventListener("keydown", function (event) {
+    if (event.key === "ArrowLeft") {
+      plusSlides(-1);
+    } else if (event.key === "ArrowRight") {
+      plusSlides(1);
+    }
+  });
+}
+
+// Function to close the modal
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+
+  // Remove event listeners for the Escape key and arrow keys
+  document.removeEventListener("keydown", closeModal);
+  document.removeEventListener("keydown", function (event) {
+    if (event.key === "ArrowLeft" || event.key === "ArrowRight") {
+      // No need to do anything here
+    }
+  });
+}
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides((slideIndex += n));
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides((slideIndex = n));
+}
+
+// Function to display slides
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {
+    slideIndex = 1;
   }
-  
-  // Close the Modal
-  function closeModal() {
-	document.getElementById("myModal").style.display = "none";
+  if (n < 1) {
+    slideIndex = slides.length;
   }
-  
-  var slideIndex = 1;
-  showSlides(slideIndex);
-  
-  // Next/previous controls
-  function plusSlides(n) {
-	showSlides(slideIndex += n);
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
   }
-  
-  // Thumbnail image controls
-  function currentSlide(n) {
-	showSlides(slideIndex = n);
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
   }
+  slides[slideIndex - 1].style.display = "block";
+  dots[slideIndex - 1].className += " active";
+  captionText.innerHTML = dots[slideIndex - 1].alt;
+}
+
   
-  function showSlides(n) {
-	var i;
-	var slides = document.getElementsByClassName("mySlides");
-	var dots = document.getElementsByClassName("demo");
-	var captionText = document.getElementById("caption");
-	if (n > slides.length) {slideIndex = 1}
-	if (n < 1) {slideIndex = slides.length}
-	for (i = 0; i < slides.length; i++) {
-	  slides[i].style.display = "none";
-	}
-	for (i = 0; i < dots.length; i++) {
-	  dots[i].className = dots[i].className.replace(" active", "");
-	}
-	slides[slideIndex-1].style.display = "block";
-	dots[slideIndex-1].className += " active";
-	captionText.innerHTML = dots[slideIndex-1].alt;
-  }
