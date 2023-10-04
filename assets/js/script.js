@@ -938,19 +938,25 @@ function openModal() {
     }
   });
 }
-
+ 
 // Function to close the modal
 function closeModal() {
-  document.getElementById("myModal").style.display = "none";
-
-  // Remove event listeners for the Escape key and arrow keys
-  document.removeEventListener("keydown", closeModal);
-  document.removeEventListener("keydown", function (event) {
-    if (event.key === "ArrowLeft" || event.key === "ArrowRight") {
-      // No need to do anything here
-    }
-  });
-}
+	// Get the modal element
+	const modal = document.getElementById("myModal");
+  
+	// Hide the modal element
+	modal.style.display = "none";
+  
+	// Remove all event listeners from the modal element
+	modal.removeEventListener("click", () => {});
+	modal.removeEventListener("keydown", () => {});
+  
+	// Remove the modal backdrop element
+	const backdrop = document.querySelector(".modal-backdrop");
+	if (backdrop) {
+	  backdrop.remove();
+	}
+  }
 
 // Next/previous controls
 function plusSlides(n) {

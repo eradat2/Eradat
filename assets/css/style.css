@@ -13327,7 +13327,7 @@ ol.commentlist li::after {
 /* for arabic version */
 
 .ar-navbar {
-  padding-right: 100px;
+  padding-right: 100vh;
 }
 
 /* for arabic version of login portal */
@@ -13672,4 +13672,14 @@ img.hover-shadow {
 
 .hover-shadow:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.banner-image {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1; /* To place the image behind content */
+  object-fit: cover;
 }
