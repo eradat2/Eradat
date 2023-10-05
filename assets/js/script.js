@@ -939,24 +939,32 @@ function openModal() {
   });
 }
  
-// Function to close the modal
 function closeModal() {
-	// Get the modal element
-	const modal = document.getElementById("myModal");
+ const modal = document.getElementById("myModal");
+
+ modal.style.display = "none";
   
-	// Hide the modal element
-	modal.style.display = "none";
-  
-	// Remove all event listeners from the modal element
-	modal.removeEventListener("click", () => {});
-	modal.removeEventListener("keydown", () => {});
-  
-	// Remove the modal backdrop element
-	const backdrop = document.querySelector(".modal-backdrop");
-	if (backdrop) {
-	  backdrop.remove();
-	}
-  }
+ modal.removeEventListener("click", () => {});
+ modal.removeEventListener("keydown", () => {});
+
+ const backdrop = document.querySelector(".modal-backdrop");
+ if (backdrop) {
+    backdrop.remove();
+ }
+
+ // Add event listeners to close the modal when the user clicks outside of it or presses the Escape key
+ window.addEventListener("click", (event) => {
+    if (event.target === modal) {
+      closeModal();
+    }
+ });
+
+ window.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") {
+      closeModal();
+    }
+ });
+}
 
 // Next/previous controls
 function plusSlides(n) {
