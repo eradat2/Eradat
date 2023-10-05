@@ -13327,8 +13327,23 @@ ol.commentlist li::after {
 /* for arabic version */
 
 .ar-navbar {
-  padding-right: 100vh;
+  padding-right: 105vh;
+  font-size: 0.88rem;
+  text-align: left
 }
+
+.ar-navbar .navbar-nav .nav-item.english-option {
+  padding-right: 20px; /* Adjust the padding as needed */
+}
+
+
+/* Add a media query for responsiveness */
+@media (max-width: 768px) {
+  .ar-navbar {
+    justify-content: flex-start; /* Align items to the end for small screens */
+  }
+}
+
 
 /* for arabic version of login portal */
 
