@@ -924,80 +924,77 @@ showSlides(slideIndex);
 
 // Function to open the modal
 function openModal() {
-  document.getElementById("myModal").style.display = "block";
+ document.getElementById("myModal").style.display = "block";
 
-  // Add event listener for the Escape key to close the modal
-  document.addEventListener("keydown", closeModal);
+ // Add event listener for the Escape key to close the modal
+ document.addEventListener("keydown", closeModal);
 
-  // Add event listeners for left and right arrow keys
-  document.addEventListener("keydown", function (event) {
+ // Add event listeners for left and right arrow keys
+ document.addEventListener("keydown", function (event) {
     if (event.key === "ArrowLeft") {
       plusSlides(-1);
     } else if (event.key === "ArrowRight") {
       plusSlides(1);
     }
-  });
-}
- 
-// Function to close the modal
-function closeModal() {
-	// Get the modal element
-	const modal = document.getElementById("myModal");
-  
-	// Hide the modal element
-	modal.style.display = "none";
-  
-	// Remove all event listeners from the modal element
-	modal.removeEventListener("click", () => {});
-	modal.removeEventListener("keydown", () => {});
-  
-	// Remove the modal backdrop element
-	const backdrop = document.querySelector(".modal-backdrop");
-	if (backdrop) {
-	  backdrop.remove();
-	}
-	backdrop.addEventListener("click", closeModal);
-  }
+ });
 
- // Add event listeners to close the modal when the user clicks outside of it or presses the Escape key
- window.addEventListener("click", (event) => {
-    if (event.target === modal) {
+ // Add event listener for the click event on the modal element
+ document.getElementById("myModal").addEventListener("click", function (event) {
+    if (event.target === this) {
       closeModal();
     }
  });
+}
 
-window.addEventListener("keydown", (event) => {
-	if (event.key === "Escape") {
-		closeModal();
-	}
-});
+// Function to close the modal
+function closeModal() {
+ // Get the modal element
+ const modal = document.getElementById("myModal");
+  
+ // Hide the modal element
+ modal.style.display = "none";
+  
+ // Remove all event listeners from the modal element
+ modal.removeEventListener("click", () => {});
+ modal.removeEventListener("keydown", () => {});
+  
+ // Remove the modal backdrop element
+ const backdrop = document.querySelector(".modal-backdrop");
+ if (backdrop) {
+    backdrop.remove();
+ }
+}
+
+// Next/previous controls
+function plusSlides(n) {
+ showSlides((slideIndex += n));
+}
 
 // Thumbnail image controls
 function currentSlide(n) {
-  showSlides((slideIndex = n));
+ showSlides((slideIndex = n));
 }
 
 // Function to display slides
 function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  var captionText = document.getElementById("caption");
-  if (n > slides.length) {
+ var i;
+ var slides = document.getElementsByClassName("mySlides");
+ var dots = document.getElementsByClassName("demo");
+ var captionText = document.getElementById("caption");
+ if (n > slides.length) {
     slideIndex = 1;
-  }
-  if (n < 1) {
+ }
+ if (n < 1) {
     slideIndex = slides.length;
-  }
-  for (i = 0; i < slides.length; i++) {
+ }
+ for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
+ }
+ for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex - 1].style.display = "block";
-  dots[slideIndex - 1].className += " active";
-  captionText.innerHTML = dots[slideIndex - 1].alt;
+ }
+ slides[slideIndex - 1].style.display = "block";
+ dots[slideIndex - 1].className += " active";
+ captionText.innerHTML = dots[slideIndex - 1].alt;
 }
-
   
