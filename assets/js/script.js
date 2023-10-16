@@ -956,6 +956,7 @@ function closeModal() {
 	if (backdrop) {
 	  backdrop.remove();
 	}
+	backdrop.addEventListener("click", closeModal);
   }
 
  // Add event listeners to close the modal when the user clicks outside of it or presses the Escape key
@@ -965,17 +966,11 @@ function closeModal() {
     }
  });
 
- window.addEventListener("keydown", (event) => {
-    if (event.key === "Escape") {
-      closeModal();
-    }
- });
-}
-
-// Next/previous controls
-function plusSlides(n) {
-  showSlides((slideIndex += n));
-}
+window.addEventListener("keydown", (event) => {
+	if (event.key === "Escape") {
+		closeModal();
+	}
+});
 
 // Thumbnail image controls
 function currentSlide(n) {
