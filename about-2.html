@@ -11,7 +11,7 @@
 <link rel="icon" href="assets/Images-Eradat/Favicons/favicon.ico" type="image/x-icon">
 
 <!-- Google Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
 <!-- Stylesheets -->
 <link href="assets/css/style.css" rel="stylesheet">
@@ -24,7 +24,15 @@
 <link href="assets/css/color.css" rel="stylesheet">
 <link href="assets/css/rtl.css" rel="stylesheet">
 
+
+<!-- Tailiwind CDN -->
+
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
 <link href="assets/css/responsive.css" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
 
 </head>
 
@@ -34,70 +42,70 @@
     <!-- main header -->
     <header class="main-header style-one style-six">
         <nav class="navbar navbar-expand-lg fixed-top py-3">
-          <div class="container-fluid">
-            <div class="mobile-logo">
-              <a href="index.html">
-                <img src="assets/Images-Eradat/Logo/Eradat_logos_-_black_and_white_-_121_by_129-removebg-preview.png" alt="Image" id="logo">
-              </a>
+            <div class="container-fluid">
+                <div class="mobile-logo">
+                    <a href="index.html">
+                        <img src="assets/Images-Eradat/Logo/Eradat_logos_-_black_and_white_-_121_by_129-removebg-preview.png" alt="Image" id="logo">
+                    </a>
+                </div>
+            
+                <!-- Mobile Navigation Toggler -->
+                <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right mobile-nav-toggler">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <div id="navbarSupportedContent" class="collapse navbar-collapse">
+                    <ul class="navbar-nav ml-auto main-menu">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home <span class="sr-only">(current)</span></a></li>
+                    <li class="nav-item active"><a href="about-2.html" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="project-element-1.html" class="nav-link">Properties</a></li>
+                    <li class="nav-item"><a href="media.html" class="nav-link">Media</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li class="nav-item">
+                        <a href="about_ar.html" onclick="changeLanguage('ar')" class="nav-link text-uppercase">العربية</a>
+                    </li>                                                          
+                    </ul>
+                </div>
             </div>
-      
-            <!-- Mobile Navigation Toggler -->
-            <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right mobile-nav-toggler">
-              <i class="fa fa-bars"></i>
-            </button>
-            <div id="navbarSupportedContent" class="collapse navbar-collapse">
-              <ul class="navbar-nav ml-auto main-menu">
-                <li class="nav-item"><a href="index.html" class="nav-link font-weight-bold">Home <span class="sr-only">(current)</span></a></li>
-                <li class="nav-item active"><a href="about-2.html" class="nav-link font-weight-bold">About</a></li>
-                <li class="nav-item"><a href="project-element-1.html" class="nav-link font-weight-bold">Properties</a></li>
-                <li class="nav-item"><a href="media.html" class="nav-link font-weight-bold">Media</a></li>
-                <li class="nav-item"><a href="contact.html" class="nav-link font-weight-bold">Contact</a></li>
-                <li class="nav-item">
-                  <a href="about_ar.html" onclick="changeLanguage('ar')" class="nav-link text-uppercase font-weight-bold">العربية</a>
-                </li>                                                          
-              </ul>
-            </div>
-          </div>
         </nav>
-      </header>
-      
-      <!-- Mobile Menu -->
-      <div class="mobile-menu">
+    </header>
+    
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
         <div class="menu-backdrop"></div>
         <div class="close-btn"><i class="fas fa-times"></i></div>
-      
+    
         <nav class="menu-box">
-          <div class="nav-logo">
+            <div class="nav-logo">
             <a href="index.html">
-              <img src="assets/Images-Eradat/Logo/Eradat_logos_-_black_and_white_-_121_by_129-removebg-preview.png" alt="Image" id="mobile-logo">
+                <img src="assets/Images-Eradat/Logo/Eradat_logos_-_black_and_white_-_121_by_129-removebg-preview.png" alt="Image" id="mobile-logo">
             </a>
-          </div>
-          <div class="menu-outer">
+        </div>
+        <div class="menu-outer">
             <ul class="navbar-nav ml-auto main-menu">
-              <li class="nav-item active" style="color: #fff;"><a href="index.html" class="nav-link text-uppercase font-weight-bold">Home <span class="sr-only">(current)</span></a></li>
-              <li class="nav-item"><a href="about-2.html" class="nav-link text-uppercase font-weight-bold">About</a></li>
-              <li class="nav-item"><a href="project-element-1.html" class="nav-link text-uppercase font-weight-bold">Properties</a></li>
-              <li class="nav-item"><a href="media.html" class="nav-link text-uppercase font-weight-bold">Media</a></li>
-              <li class="nav-item"><a href="contact.html" class="nav-link text-uppercase font-weight-bold">Contact</a></li>
+                <li class="nav-item active" style="color: #fff;"><a href="index.html" class="nav-link text-uppercase font-weight-bold">Home <span class="sr-only">(current)</span></a></li>
+                <li class="nav-item"><a href="about-2.html" class="nav-link text-uppercase font-weight-bold">About</a></li>
+                <li class="nav-item"><a href="project-element-1.html" class="nav-link text-uppercase font-weight-bold">Properties</a></li>
+                <li class="nav-item"><a href="media.html" class="nav-link text-uppercase font-weight-bold">Media</a></li>
+            <li class="nav-item"><a href="contact.html" class="nav-link text-uppercase font-weight-bold">Contact</a></li>
             </ul>
-          </div>
-          <div class="contact-info">
+        </div>
+        <div class="contact-info">
             <h4>Contact Info</h4>
             <ul>
-              <li>Salhiya Complex, Gate 1, Floor 5, Salhiya, Kuwait</li>
-              <li><a href="tel:+965415651651">+965 22396666</a></li>
-              <li><a href="mailto:info@ eradat.me">info@eradat.me</a></li>
+            <li>Salhiya Complex, Gate 1, Floor 5, Salhiya, Kuwait</li>
+            <li><a href="tel:+965415651651">+965 22396666</a></li>
+            <li><a href="mailto:info@ eradat.me">info@eradat.me</a></li>
             </ul>
-          </div>
-          <div class="social-links">
+        </div>
+        <div class="social-links">
             <ul class="social-links clearfix">
                 <li><a href="https://twitter.com/Eradatkw"><i class="fab fa-twitter"></i></a></li>
                 <li><a href="https://www.instagram.com/eradatkw/"><i class="fab fa-instagram"></i></a></li>
                 <li><a href="https://www.linkedin.com/in/eradat-international-real-estate-5ab72127a"><i class="fab fa-linkedin-in"></i></a></li>
             </ul>
-          </div>
+            </div>
         </nav>
-      </div><!--End Mobile Menu -->
+    </div><!--End Mobile Menu -->
 
     <!--Page Title-->
     <section class="page-title centred" style="background-color: #9b8579;">
@@ -114,124 +122,88 @@
     <!--End Page Title-->
 
     <!-- about-style-four -->
-    <section class="about-style-three" style="padding: 20px 0;">
-        <div class="auto-container">
-            <div class="row clearfix">
-                <div class="col-lg-12 col-md-12 col-sm-12 content-column">
-                    <div id="content_block_ten">
-                        <div class="content-box">
-                            <div class="sec-title style-four right">
-                                <h5>About Us</h5>
-                                <h2>Who we are</h2>
-                            </div>
-                            <div class="text">
-                                <p style="text-align: justify;"> ERADAT strives to become Kuwait's premier listed real estate investment company, operating in accordance with Sharia principles. Our focus is on acquiring high-quality, sustainable, and diversified income-generating properties.</p>
-                                <h4>Mission</h4><br>
-                                <p style="text-align: justify;">To create a real estate leading company that represents a pass-through vehicle of quality income-producing assets for a
-                                diversified investor base with exposure to frequent (quarterly/monthly) and sustainable cash distributions.</p>
-                                <h4>Objectives</h4><br>
-                                <p style="text-align: justify;">
-                                    ➢To build a diversified portfolio of quality income-producing properties.
-                                    <br> ➢To expand its reach and presence of its underlying portfolio across sectors, property type and countries within the GCC.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <section class="bg-white text-gray-800 dark:bg-gray-900 dark:text-gray-100">
+        <div class="max-w-4xl px-6 py-12 mx-auto space-y-6">
+            <h3 class="text-sm font-semibold tracking-widest text-gray-500 uppercase">About Us</h3>
+            <h1 class="text-4xl font-bold text-gray-900 dark:text-white">Who we are</h1>
+    
+            <p class="text-lg leading-relaxed text-gray-600 dark:text-gray-300">
+                ERADAT strives to become Kuwait's premier listed real estate investment company, operating in accordance with Sharia principles. Our focus is on acquiring high-quality, sustainable, and diversified income-generating properties.
+            </p>
+    
+            <h2 class="text-xl font-semibold text-gray-800 dark:text-white">Mission</h2>
+            <p class="text-lg leading-relaxed text-gray-600 dark:text-gray-300">
+                To create a real estate leading company that represents a pass-through vehicle of quality income-producing assets for a diversified investor base with exposure to frequent (quarterly/monthly) and sustainable cash distributions.
+            </p>
+    
+            <h2 class="text-xl font-semibold text-gray-800 dark:text-white">Objectives</h2>
+            <ul class="list-disc list-inside text-lg text-gray-600 dark:text-gray-300 space-y-2">
+                <li>To build a diversified portfolio of quality income-producing properties.</li>
+                <li>To expand its reach and presence of its underlying portfolio across sectors, property type and countries within the GCC.</li>
+            </ul>
         </div>
     </section>
+    
     <!-- about-style-four end -->
 
     <div class="perpendicular-line"></div>
 
     <!-- project-style-four -->
-    <section class="team-style-three sec-pad">
-        <div class="auto-container">
-            <div class="sec-title style-four right">
-                <h5>Meet our senior executive leadership team and board of directors</h5>
-                <h2>Leadership</h2>
+    <section class="bg-white dark:bg-gray-900">
+        <div class="container px-6 py-10 mx-auto">
+            <h1 class="text-2xl font-semibold text-center text-gray-800 capitalize lg:text-3xl dark:text-Black">Our Executive Leadership</h1>
+    
+            <p class="max-w-2xl mx-auto my-6 text-center text-gray-500 dark:text-gray-500">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo incidunt ex placeat modi magni quia error alias, adipisci rem similique, at omnis eligendi optio eos harum.
+            </p>
+
+            <div x-data="{
+                current: 0,
+                people: [
+                    {img: 'assets/Images-Eradat/BOD/New BOD pics/Dr.Sulaiman Al abduljadir_.png', name: 'Dr. Sulaiman Tareq Al AbdulJadr', role: 'Chairman', link: 'BOD - Chairman.html'},
+                    {img: 'assets/Images-Eradat/BOD/New BOD pics/Mr.waleed alsumait.png', name: 'Waleed Hamad Al Sumait', role: 'Vice Chairman', link: 'BOD - Vice chairman.html'},
+                    {img: 'assets/Images-Eradat/BOD/New BOD pics/Mr.Bader alHajiry.png', name: 'Bader Al Hajeri', role: 'CEO', link: 'BOD - CEO.html'},
+                    {img: 'assets/Images-Eradat/BOD/New BOD pics/Mr.Fawaz alRoudhan.png', name: 'Fawaz Abdul Aziz Al Roudan', role: 'Board Member', link: 'BOD_Board Member_saad_al_muneefi.html'},
+                    {img: 'assets/Images-Eradat/BOD/New BOD pics/Mr. Saad almneefi.png', name: 'Saad Nasser Al Muneefi', role: 'Board Member', link: 'BOD - Board Member.html'}
+                ],
+                visible: 3,
+                get max() {
+                return Math.ceil(this.people.length / this.visible) - 1;
+                }
+            }" class="relative w-full overflow-hidden max-w-7xl mx-auto">
+                
+                <div class="flex transition-transform duration-700 ease-in-out"
+                     :style="`transform: translateX(-${current * 100}%)`">
+                <template x-for="person in people" :key="person.name">
+                    <div class="w-full md:w-1/3 flex-shrink-0 p-4">
+                        <a :href="person.link" class="flex flex-col items-center hover:scale-105 transition-transform">
+                            <img class="object-cover w-full rounded-xl aspect-square" :src="person.img" alt="">
+                            <h1 class="mt-4 text-xl font-semibold text-black text-center" x-text="person.name"></h1>
+                            <p class="mt-2 text-gray-500 text-center" x-text="person.role"></p>
+                        </a>
+                    </div>
+                </template>
             </div>
-            <div class="row clearfix" style="justify-content: center;">
-                <div class="col-lg-6 col-md-6 col-sm-12 team-block">
-                    <div class="team-block-three">
-                        <div class="inner-box">
-                            <figure class="image-box">
-                                <div class="bg-box-1"></div>
-                                <div class="bg-box-2"></div>
-                                <a href="BOD - Chairman.html"><img src="assets/Images-Eradat/BOD/New BOD pics/Dr.Sulaiman Al abduljadir_.png" alt=""></a>
-                            </figure>
-                            <div class="lower-content">
-                                <h3><a href="BOD - Chairman.html">Dr Sulaiman Al Abdul Jader</a></h3>
-                                <p class="designation">Chairman</p>
-                            </div>
-                        </div>
-                    </div>
+            
+                <!-- Left Button -->
+                <div class="absolute inset-y-0 left-0 flex items-center">
+                    <button @click="if(current > 0) current--"
+                        class="bg-gray-800 text-white p-2 rounded-full shadow hover:bg-gray-700">
+                        &#8592;
+                    </button>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 team-block">
-                    <div class="team-block-three">
-                        <div class="inner-box">
-                            <figure class="image-box">
-                                <div class="bg-box-1"></div>
-                                <div class="bg-box-2"></div>
-                                <a href="BOD - Vice chairman.html"><img src="assets/Images-Eradat/BOD/New BOD pics/Mr.waleed alsumait.png" alt=""></a>
-                            </figure>
-                            <div class="lower-content">
-                                <h3 ><a href="BOD - Vice chairman.html">Waleed Al Sumait</a></h3>
-                                <p class="designation">Vice Chairman </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 team-block">
-                    <div class="team-block-three">
-                        <div class="inner-box">
-                            <figure class="image-box">
-                                <div class="bg-box-1"></div>
-                                <div class="bg-box-2"></div>
-                                <a href="BOD - CEO.html"> <img src="assets/Images-Eradat/BOD/New BOD pics/Mr.Bader alHajiry.png" alt=""></a>
-                            </figure>
-                            <div class="lower-content">
-                                <h3><a href="BOD - CEO.html">Bader Al Hajri</a></h3>
-                                <p class="designation">Chief Executive Officer & Board Member</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- second row starts from here-->
-             
-                <div class="col-lg-6 col-md-6 col-sm-12 team-block">
-                    <div class="team-block-three">
-                        <div class="inner-box">
-                            <figure class="image-box">
-                                <div class="bg-box-1"></div>
-                                <div class="bg-box-2"></div>
-                                <a href="BOD - Board Member.html"> <img src="assets/Images-Eradat/BOD/New BOD pics/Mr.Fawaz alRoudhan.png" alt=""></a> 
-                            </figure>
-                            <div class="lower-content">
-                                <h3><a href="BOD - Board Member.html">Fawaz Abdul Aziz Al-Roudan </a></h3>
-                                <p class="designation">Board Member (Independent)</p>
-                            </div>
-                        </div>
-                    </div>
-                </div> 
-                <div class="col-lg-6 col-md-6 col-sm-12 team-block">
-                    <div class="team-block-three">
-                        <div class="inner-box">
-                            <figure class="image-box">
-                                <div class="bg-box-1"></div>
-                                <div class="bg-box-2"></div>
-                                <a href="BOD_Board Member_saad_al_muneefi.html"><img src="assets/Images-Eradat/BOD/New BOD pics/Mr. Saad almneefi.png" alt=""></a>
-                            </figure>
-                            <div class="lower-content">
-                                <h3><a href="BOD_Board Member_saad_al_muneefi.html"> Saad Nasser Al Muneefi</a></h3>
-                                <p class="designation">Board Member</p>
-                            </div>
-                        </div>
-                    </div>
+            
+                <!-- Right Button -->
+                <div class="absolute inset-y-0 right-0 flex items-center">
+                    <button @click="if(current < max) current++"
+                        class="bg-gray-800 text-white p-2 rounded-full shadow hover:bg-gray-700">
+                    &#8594;
+                    </button>
                 </div>
             </div>
         </div>
     </section>
+
     <!-- project-style-four end -->
 
     <!-- main-footer -->
@@ -252,10 +224,10 @@
                                     <li><i class="fas fa-headphones"></i>Contact No. <a href="tel:+965 239xxxxx">+965 22396666 </a></li>
                                 </ul>
                                 <ul class="social-links clearfix">
-                                  <li><a href="https://twitter.com/Eradatkw"><i class="fab fa-twitter"></i></a></li>
-                                  <li><a href="https://www.instagram.com/eradatkw/"><i class="fab fa-instagram"></i></a></li>
-                                  <li><a href="https://www.linkedin.com/in/eradat-international-real-estate-5ab72127a"><i class="fab fa-linkedin-in"></i></a></li>
-                              </ul>
+                                    <li><a href="https://twitter.com/Eradatkw"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="https://www.instagram.com/eradatkw/"><i class="fab fa-instagram"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/in/eradat-international-real-estate-5ab72127a"><i class="fab fa-linkedin-in"></i></a></li>
+                                </ul>
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-12 footer-column">
@@ -275,21 +247,21 @@
                                 </div>
                             </div>
                             <div class="col-lg-12 col-md-12 col-sm-12 p-tb20">
-                              <div class="wt-icon-box-wraper left bdr-1 bdr-gray-dark p-tb15 p-lr10 clearfix" style="margin: 150px 0 0 150px;">
-                                  <div class="icon-md site-text-primary">
-                                      <a href="https://eradatme.sharepoint.com/sites/Eradat-RealEstateInvestmentCompany">
-                                          <img src="assets/Images-Eradat/Favicons/sharepoint-logotype.png" alt="https://www.flaticon.com/free-icons/share title=share icons Share icons created by Freepik - Flaticon">
-                                      </a>
-                                  </div>
-                                  <div class="icon-content">
-                                      <a href="https://eradatme.sharepoint.com/sites/Eradat-RealEstateInvestmentCompany" class="sharepoint-link">
-                                          <h5 style="color: #fff;" class="wt-tilte text-uppercase m-b0">Login portal</h5>
-                                          <p class="m-b0">Access Here</p>
-                                      </a>
-                                  </div>  
-                              </div>
+                                <div class="wt-icon-box-wraper left bdr-1 bdr-gray-dark p-tb15 p-lr10 clearfix" style="margin: 150px 0 0 150px;">
+                                    <div class="icon-md site-text-primary">
+                                        <a href="https://eradatme.sharepoint.com/sites/Eradat-RealEstateInvestmentCompany">
+                                            <img src="assets/Images-Eradat/Favicons/sharepoint-logotype.png" alt="https://www.flaticon.com/free-icons/share title=share icons Share icons created by Freepik - Flaticon">
+                                        </a>
+                                    </div>
+                                    <div class="icon-content">
+                                        <a href="https://eradatme.sharepoint.com/sites/Eradat-RealEstateInvestmentCompany" class="sharepoint-link">
+                                            <h5 style="color: #fff;" class="wt-tilte text-uppercase m-b0">Login portal</h5>
+                                            <p class="m-b0">Access Here</p>
+                                        </a>
+                                </div>  
                             </div>
-                          </div>
+                        </div>
+                        </div>
                         </div>
                     </div>
                 </div>
@@ -323,6 +295,11 @@
 <script src="assets/js/TweenMax.min.js"></script>
 <script src="assets/js/circle-progress.js"></script>
 <script src="assets/js/jquery.nice-select.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+
+
 
 <!-- main-js -->
 <script src="assets/js/script.js"></script>

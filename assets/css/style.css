@@ -62,7 +62,13 @@
   Global Settings
 ====================================================================
 
+
+
+
  ***/
+
+/*** <weight>: Use a value from 100 to 900
+ <uniquifier>: Use a unique and descriptive class name ***/ 
 
 body {
   font-size:14px;
@@ -158,7 +164,7 @@ p {
   position: relative;
   font-size: 20px;
   line-height: 28px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: #000;
   margin: 0px;
   transition: all 500ms ease;
@@ -175,7 +181,7 @@ h4,
 h5,
 h6 {
   position: relative;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: #222222;
   margin: 0px;
   transition: all 500ms ease;
@@ -4043,7 +4049,7 @@ a, span {
 
 .news-block-one .inner-box .lower-content .link a span{
   position: relative;
-  display: inline-block;
+  /* display: inline-block; */
   font-size: 16px;
   line-height: 16px;
   color: #222;
@@ -13394,13 +13400,13 @@ ol.commentlist li::after {
 
 .custom-header {
   z-index: 5;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   visibility: visible;
   text-align: left;
   line-height: 1.6em;
   letter-spacing: 0px;
   font-weight: 400;
-  font-size: 0.5em;
+  font-size: 1em;
   border-color: rgb(92, 92, 92);
   border-style: none;
   margin: 0px;
@@ -13426,13 +13432,13 @@ ol.commentlist li::after {
 /* Right-to-Left (RTL) Custom Header */
 .custom-header-rtl {
   z-index: 5;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Noto Kufi Arabic', sans-serif;
   visibility: visible;
   text-align: right; /* Adjust text alignment to right for RTL */
   line-height: 1.6em;
   letter-spacing: 0px;
   font-weight: 400;
-  font-size: 0.5em;
+  font-size: 1em;
   border-color: rgb(92, 92, 92);
   border-style: none;
   margin: 0px;
@@ -13465,8 +13471,6 @@ ol.commentlist li::after {
   }
 }
 
-
-
 .custom-header-ar {
   text-align: right;
   left: auto;
@@ -13478,7 +13482,7 @@ ol.commentlist li::after {
 /* Custom class for the subtitle */
 .custom-subtitle {
   z-index: 5;
-  font-family: 'Helvetica Neue', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   visibility: visible;
   text-align: left;
   line-height: 0.6em; /* Adjust the line height as needed */
@@ -13517,7 +13521,7 @@ ol.commentlist li::after {
 
 .custom-subtitle-rtl {
   z-index: 5;
-  font-family: 'Helvetica Neue', sans-serif;
+  font-family: 'Noto Kufi Arabic', sans-serif;
   visibility: visible;
   text-align: right; /* Adjust text alignment to right for RTL */
   line-height: 0.6em; /* Adjust the line height as needed */
@@ -13697,3 +13701,43 @@ img.hover-shadow {
   z-index: -1; /* To place the image behind content */
   object-fit: cover;
 }
+
+.carousel-scroll-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.4);
+  border: none;
+  color: #fff;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(3px);
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+.carousel-scroll-btn:hover {
+  background: #000;
+}
+
+.carousel-scroll-btn.left {
+  left: -18px;
+}
+
+.carousel-scroll-btn.right {
+  right: -18px;
+}
+
+@media (max-width: 576px) {
+  .carousel-scroll-btn {
+    display: none;
+  }
+}
+

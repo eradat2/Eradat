@@ -816,36 +816,28 @@
    For NavBar - About us page - changing the font color and logo after passing section feature
    =========================================================================================== */
   
-   window.addEventListener("scroll", function() {
+   window.addEventListener("scroll", function () {
 	const navbar = document.querySelector(".navbar");
 	const logo = navbar.querySelector("img");
-	const scrolled = window.scrollY > 10; // Change the scroll threshold as desired
+	const navLinks = document.querySelectorAll(".navbar .nav-link");
+	const scrolled = window.scrollY > 10;
   
+	// Toggle navbar class
 	navbar.classList.toggle("scrolled", scrolled);
-	
+  
+	// Change logo based on scroll
 	if (scrolled) {
 	  logo.setAttribute("src", "assets/Images-Eradat/Logo/ERADAT-Logo-121 by 129.png");
 	} else {
 	  logo.setAttribute("src", "assets/Images-Eradat/Logo/Eradat_logos_-_black_and_white_-_121_by_129-removebg-preview.png");
 	}
+  
+	// Change nav link color
+	navLinks.forEach(function (link) {
+	  link.style.color = scrolled ? "#000000" : "#ffffff";
+	});
   });
-
-  window.addEventListener("scroll", function() {
-    const navbar = document.querySelector(".navbar");
-    const navLinks = document.querySelectorAll(".navbar .nav-link");
-
-    if (window.scrollY > 0) {
-        navbar.classList.add("scrolled");
-        navLinks.forEach(function(link) {
-            link.style.color = "#000000"; // Set font color to black
-        });
-    } else {
-        navbar.classList.remove("scrolled");
-        navLinks.forEach(function(link) {
-            link.style.color = "#ffffff"; // Set font color to white
-        });
-    }
-});
+  
 
    /* =======================================================================================
    For Mobile View Navbar

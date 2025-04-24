@@ -111,7 +111,7 @@
 }
 
 .sec-title h5:before{
-	background: #da2c46;
+	background: #000000;
 }
 
 #content_block_one .content-box .inner-box .single-item h4 a:hover{
@@ -198,7 +198,7 @@
 }
 
 .news-block-one .inner-box .lower-content .link a i{
-	color: #da2c46;
+	color: #000000;
 }
 
 .news-block-one .inner-box .lower-content .link a:hover span{
@@ -595,7 +595,7 @@
 }
 
 .counter-block-two .count-outer{
-	color: #1c6ead;
+	color: #000000;
 }
 
 #content_block_eight .content-box .btn-box a:hover{
@@ -1188,7 +1188,7 @@
 }
 
 .team-block-three .inner-box .lower-content:before{
-	background: #da2c46;
+	background: #9b5879;
 }
 
 .pricing-section.pricing-page .tab-btn-box .tab-btns li.active-btn, 
