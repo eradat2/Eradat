@@ -77,7 +77,7 @@
 
 .banner-section .owl-theme .owl-nav .owl-prev:hover,
 .banner-section .owl-theme .owl-nav .owl-next:hover{
-	background: #da2c46;
+	background: #000000;
 }
 
 .info-section .title-inner .year-box h2{
@@ -202,8 +202,8 @@
 }
 
 .news-block-one .inner-box .lower-content .link a:hover span{
-	color: #da2c46;
-	border-color: #da2c46;
+	color: #9b8579;
+	border-color: #000000;
 }
 
 .cta-section{
@@ -223,7 +223,7 @@
 }
 
 .main-footer .widget-section .logo-widget .social-links li a:hover{
-  color: #da2c46;
+  color: #9b8579;
 }
 
 .main-footer .widget-section .footer-widget .widget-title h4:before{
@@ -290,7 +290,7 @@
 
 .banner-section.style-two .owl-theme .owl-nav .owl-prev:hover, 
 .banner-section.style-two .owl-theme .owl-nav .owl-next:hover {
-  background: #f8952c;
+  background: #000000;
 }
 
 .feature-block-two .inner-box .lower-content .inner:before{
@@ -706,11 +706,11 @@
 }
 
 .main-footer.alternet-3 .footer-upper .upper-inner .btn-box a:hover{
-	color: #1c6ead;
+	color: #9b8579;
 }
 
 .main-footer.alternet-3 .widget-section .logo-widget .info-list li i{
-  color: #dc3545;
+  color: #9b8579;
 }
 
 .main-footer.alternet-3 .widget-section .logo-widget .info-list li a:hover {
@@ -722,11 +722,11 @@
 }
 
 .main-footer.alternet-3 .widget-section .footer-widget .widget-title h4:before{
-	background: #dc3545;
+	background: #9b8579;
 }
 
 .main-footer.alternet-3 .widget-section .links-widget .widget-content ul li a:hover {
-   color: #dc3545;
+   color: #9b8579;
 }
 
 .main-footer.alternet-3 .widget-section .newsletter-widget .newsletter-form .form-group input:focus{
@@ -764,7 +764,7 @@
 
 .banner-section.style-four .owl-theme .owl-nav .owl-prev:hover, 
 .banner-section.style-four .owl-theme .owl-nav .owl-next:hover {
-  	background: #f0a400;
+  	background: #000000;
 }
 
 .banner-section.style-four .content-box .btn-box .theme-btn{
