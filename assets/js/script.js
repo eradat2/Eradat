@@ -989,4 +989,15 @@ function showSlides(n) {
  dots[slideIndex - 1].className += " active";
  captionText.innerHTML = dots[slideIndex - 1].alt;
 }
-  
+
+
+
+const swiper = new Swiper(".mySwiper", {
+    loop: true,
+    autoplay: {
+    	delay: 5000,
+    	disableOnInteraction: false,
+    },
+    effect: "fade",
+    speed: 1000,
+});

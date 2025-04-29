@@ -27,13 +27,10 @@
 <!-- Tailwind CSS via CDN -->
 <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 
-<script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
-<script defer src="https://unpkg.com/@alpinejs/intersect@3.x.x/dist/cdn.min.js"></script>
-<script>
-    document.addEventListener('alpine:init', () => {
-        Alpine.plugin(AlpineIntersect)
-    })
-</script>
+
+
+<script defer src="https://unpkg.com/alpinejs@3.13.0/dist/cdn.min.js"></script>
+
 
 </head>
 
@@ -54,11 +51,11 @@
             </button>
             <div id="navbarSupportedContent" class="collapse navbar-collapse">
               <ul class="navbar-nav ml-auto main-menu">
-                <li class="nav-item active"><a href="index.html" class="nav-link font-weight-bold">Home <span class="sr-only">(current)</span></a></li>
-                <li class="nav-item"><a href="about-2.html" class="nav-link font-weight-bold">About</a></li>
-                <li class="nav-item"><a href="project-element-1.html" class="nav-link font-weight-bold">Properties</a></li>
-                <li class="nav-item"><a href="media.html" class="nav-link font-weight-bold">Media</a></li>
-                <li class="nav-item"><a href="contact.html" class="nav-link font-weight-bold">Contact</a></li>
+                <li class="nav-item active"><a href="index.html" class="nav-link">Home <span class="sr-only">(current)</span></a></li>
+                <li class="nav-item"><a href="about-2.html" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="project-element-1.html" class="nav-link">Properties</a></li>
+                <li class="nav-item"><a href="media.html" class="nav-link">Media</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
                 <li class="nav-item">
                   <a href="project-element-1_ar.html" onclick="changeLanguage('ar')" class="nav-link text-uppercase font-weight-bold">العربية</a>
                 </li>                                                          
@@ -120,95 +117,83 @@
     <!--End Page Title-->
 
     <!-- Properties-section -->
-    <section class="py-24 bg-white dark:bg-gray-900">
-      <div class="w-full max-w-7xl px-6 lg:px-8 mx-auto">
+    <section class="py-20 bg-white">
+      <div class="w-full max-w-7xl mx-auto px-6 lg:px-8">
+
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
     
           <!-- Durrar Complex -->
-          <div x-data="{ show: false }" x-intersect.once="show = true" class="transition-all duration-700 ease-in-out transform" :class="show ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'">
-            <a href="Durrar_complex_1.html" class="relative group overflow-hidden aspect-square rounded-lg shadow-lg">
-              <img src="assets/Images-Eradat/Properties_Images/Darrar_Complex/Durrar_complex_2_1482x959.jpg" alt="Durrar Complex" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500">
-              <div class="absolute inset-x-0 bottom-0 bg-black bg-opacity-60 px-4 py-6">
-                <h3 class="text-white text-lg font-semibold transform translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 delay-100">Durrar Complex</h3>
-                <p class="text-white text-sm mt-2 transform translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-700 delay-200">Residential</p>
-              </div>
-            </a>
-          </div>
+          <a href="Durrar_complex_1.html" class="block rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow">
+            <img src="assets/Images-Eradat/Properties_Images/Darrar_Complex/Durrar_complex_2_1482x959.jpg" alt="Durrar Complex" class="w-full h-64 object-cover">
+            <div class="bg-gray-100 p-6">
+              <h3 class="text-xl font-semibold text-gray-800 mb-2">Durrar Complex</h3>
+              <p class="text-sm text-gray-500">Residential</p>
+            </div>
+          </a>
     
           <!-- Domus 1 & 2 -->
-          <div x-data="{ show: false }" x-intersect.once="show = true" class="transition-all duration-700 ease-in-out transform" :class="show ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'">
-            <a href="Domus_or1 - Copy.html" class="relative group overflow-hidden aspect-square rounded-lg shadow-lg">
-              <img src="assets/Images-Eradat/Properties Images/719x582/Domus 1 - Dubai.webp" alt="Domus" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500">
-              <div class="absolute inset-x-0 bottom-0 bg-black bg-opacity-60 px-4 py-6">
-                <h3 class="text-white text-lg font-semibold transform translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 delay-100">Domus 1 & 2</h3>
-                <p class="text-white text-sm mt-2 transform translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-700 delay-200">Residential</p>
-              </div>
-            </a>
-          </div>
+          <a href="Domus_or1 - Copy.html" class="block rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow">
+            <img src="assets/Images-Eradat/Properties Images/719x582/Domus 1 - Dubai.webp" alt="Domus 1 & 2" class="w-full h-64 object-cover">
+            <div class="bg-gray-100 p-6">
+              <h3 class="text-xl font-semibold text-gray-800 mb-2">Domus 1 & 2</h3>
+              <p class="text-sm text-gray-500">Residential</p>
+            </div>
+          </a>
     
           <!-- Farwaniya -->
-          <div x-data="{ show: false }" x-intersect.once="show = true" class="transition-all duration-700 ease-in-out transform" :class="show ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'">
-            <a href="Farwaniya_residential_building.html" class="relative group overflow-hidden aspect-square rounded-lg shadow-lg">
-              <img src="assets/Images-Eradat/Properties_Images/Farwaniya_residential_building/Farwaniya_buidling_side_full_view.jpg" alt="Farwaniya" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500">
-              <div class="absolute inset-x-0 bottom-0 bg-black bg-opacity-60 px-4 py-6">
-                <h3 class="text-white text-lg font-semibold transform translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 delay-100">Farwaniya</h3>
-                <p class="text-white text-sm mt-2 transform translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-700 delay-200">Residential</p>
-              </div>
-            </a>
-          </div>
+          <a href="Farwaniya_residential_building.html" class="block rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow">
+            <img src="assets/Images-Eradat/Properties_Images/Farwaniya_residential_building/Farwaniya_buidling_side_full_view.jpg" alt="Farwaniya" class="w-full h-64 object-cover">
+            <div class="bg-gray-100 p-6">
+              <h3 class="text-xl font-semibold text-gray-800 mb-2">Farwaniya</h3>
+              <p class="text-sm text-gray-500">Residential</p>
+            </div>
+          </a>
     
           <!-- Fintas Complex -->
-          <div x-data="{ show: false }" x-intersect.once="show = true" class="transition-all duration-700 ease-in-out transform" :class="show ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'">
-            <a href="Fintas_complex_1 - Copy.html" class="relative group overflow-hidden aspect-square rounded-lg shadow-lg">
-              <img src="assets/Images-Eradat/Properties_Images/fintas/Fintas_residential_complex_2.jpg" alt="Fintas" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500">
-              <div class="absolute inset-x-0 bottom-0 bg-black bg-opacity-60 px-4 py-6">
-                <h3 class="text-white text-lg font-semibold transform translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 delay-100">Fintas Complex</h3>
-                <p class="text-white text-sm mt-2 transform translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-700 delay-200">Residential</p>
-              </div>
-            </a>
-          </div>
+          <a href="Fintas_complex_1 - Copy.html" class="block rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow">
+            <img src="assets/Images-Eradat/Properties_Images/fintas/Fintas_residential_complex_2.jpg" alt="Fintas Complex" class="w-full h-64 object-cover">
+            <div class="bg-gray-100 p-6">
+              <h3 class="text-xl font-semibold text-gray-800 mb-2">Fintas Complex</h3>
+              <p class="text-sm text-gray-500">Residential</p>
+            </div>
+          </a>
     
           <!-- Al Manar Complex -->
-          <div x-data="{ show: false }" x-intersect.once="show = true" class="transition-all duration-700 ease-in-out transform" :class="show ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'">
-            <a href="Manar_complex_1 - Copy (5).html" class="relative group overflow-hidden aspect-square rounded-lg shadow-lg">
-              <img src="assets/Images-Eradat/Properties_Images/Al_Manar_complex/Al_Manar_complex_2-min.jpg" alt="Al Manar" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500">
-              <div class="absolute inset-x-0 bottom-0 bg-black bg-opacity-60 px-4 py-6">
-                <h3 class="text-white text-lg font-semibold transform translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 delay-100">Al Manar Complex</h3>
-                <p class="text-white text-sm mt-2 transform translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-700 delay-200">Commercial</p>
-              </div>
-            </a>
-          </div>
+          <a href="Manar_complex_1 - Copy (5).html" class="block rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow">
+            <img src="assets/Images-Eradat/Properties_Images/Al_Manar_complex/Al_Manar_complex_2-min.jpg" alt="Al Manar Complex" class="w-full h-64 object-cover">
+            <div class="bg-gray-100 p-6">
+              <h3 class="text-xl font-semibold text-gray-800 mb-2">Al Manar Complex</h3>
+              <p class="text-sm text-gray-500">Commercial</p>
+            </div>
+          </a>
     
           <!-- Bneid Al Gar Clinic -->
-          <div x-data="{ show: false }" x-intersect.once="show = true" class="transition-all duration-700 ease-in-out transform" :class="show ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'">
-            <a href="Bneid_al_medical_centre.html" class="relative group overflow-hidden aspect-square rounded-lg shadow-lg">
-              <img src="assets/Images-Eradat/Properties_Images/Bneid_al_gar/Bneid_al_gar_frontal_view.jpeg" alt="Bneid Al Gar Clinic" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500">
-              <div class="absolute inset-x-0 bottom-0 bg-black bg-opacity-60 px-4 py-6">
-                <h3 class="text-white text-lg font-semibold transform translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 delay-100">Bneid Al Gar Clinic</h3>
-                <p class="text-white text-sm mt-2 transform translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-700 delay-200">Medical</p>
-              </div>
-            </a>
-          </div>
+          <a href="Bneid_al_medical_centre.html" class="block rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow">
+            <img src="assets/Images-Eradat/Properties_Images/3.jpg" alt="Bneid Al Gar Clinic" class="w-full h-64 object-cover">
+            <div class="bg-gray-100 p-6">
+              <h3 class="text-xl font-semibold text-gray-800 mb-2">Bneid Al Gar Clinic</h3>
+              <p class="text-sm text-gray-500">Medical</p>
+            </div>
+          </a>
     
           <!-- Ibn Khaldoun Complex -->
-          <div x-data="{ show: false }" x-intersect.once="show = true" class="transition-all duration-700 ease-in-out transform" :class="show ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'">
-            <a href="Ibn_Khaldoun_1 - Copy (2).html" class="relative group overflow-hidden aspect-square rounded-lg shadow-lg">
-              <img src="assets/Images-Eradat/Properties_Images/Ibn_khaldoon/Ibn_khaldoon_side_view_1_1_1500x700.jpg" alt="Ibn Khaldoun Complex" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500">
-              <div class="absolute inset-x-0 bottom-0 bg-black bg-opacity-60 px-4 py-6">
-                <h3 class="text-white text-lg font-semibold transform translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 delay-100">Ibn Khaldoun Complex</h3>
-                <p class="text-white text-sm mt-2 transform translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-700 delay-200">Commercial</p>
-              </div>
-            </a>
-          </div>
+          <a href="Ibn_Khaldoun_1 - Copy (2).html" class="block rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow">
+            <img src="assets/Images-Eradat/Properties_Images/Ibn_khaldoon/Ibn_khaldoon_side_view_1_1_1500x700.jpg" alt="Ibn Khaldoun Complex" class="w-full h-64 object-cover">
+            <div class="bg-gray-100 p-6">
+              <h3 class="text-xl font-semibold text-gray-800 mb-2">Ibn Khaldoun Complex</h3>
+              <p class="text-sm text-gray-500">Commercial</p>
+            </div>
+          </a>
     
         </div>
       </div>
     </section>
+    
     <!-- project-section end -->
 
     <!-- main-footer -->
     <footer class="bg-black text-white">
-      <div class="max-w-7xl mx-auto px-6 py-10 grid grid-cols-1 md:grid-cols-2 gap-10">
+      <div class="max-w-7xl mx-auto px-6 py-10 grid grid-cols-1 md:grid-cols-2 gap-24">
     
         <!-- Left Side: Logo + Info -->
         <div class="space-y-6">
@@ -288,7 +273,7 @@
 <!-- main-js -->
 <script src="assets/js/script.js"></script>
 
-<script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+
 
 </body><!-- End of .page_wrapper -->
 </html>

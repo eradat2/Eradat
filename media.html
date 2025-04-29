@@ -26,6 +26,8 @@
 
 <link href="assets/css/responsive.css" rel="stylesheet">
 
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
 </head>
 
 <!-- page wrapper -->
@@ -46,11 +48,11 @@
       
             <div id="navbarSupportedContent" class="collapse navbar-collapse">
               <ul class="navbar-nav ml-auto main-menu">
-                <li class="nav-item active"><a href="index.html" class="nav-link font-weight-bold">Home <span class="sr-only">(current)</span></a></li>
-                <li class="nav-item"><a href="about-2.html" class="nav-link font-weight-bold">About</a></li>
-                <li class="nav-item"><a href="project-element-1.html" class="nav-link font-weight-bold">Properties</a></li>
-                <li class="nav-item"><a href="media.html" class="nav-link font-weight-bold">Media</a></li>
-                <li class="nav-item"><a href="contact.html" class="nav-link font-weight-bold">Contact</a></li>
+                <li class="nav-item active"><a href="index.html" class="nav-link">Home <span class="sr-only">(current)</span></a></li>
+                <li class="nav-item"><a href="about-2.html" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="project-element-1.html" class="nav-link">Properties</a></li>
+                <li class="nav-item"><a href="media.html" class="nav-link">Media</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
                 <li class="nav-item">
                   <a href="media_ar.html" onclick="changeLanguage('ar')" class="nav-link    font-weight-bold">العربية</a>
                 </li>                                                          
@@ -58,45 +60,45 @@
             </div>
           </div>
         </nav>
-      </header>
-      
-      <!-- Mobile Menu -->
-      <div class="mobile-menu">
-        <div class="menu-backdrop"></div>
-        <div class="close-btn"><i class="fas fa-times"></i></div>
-      
-        <nav class="menu-box">
-          <div class="nav-logo">
-            <a href="index.html">
-              <img src="assets/Images-Eradat/Logo/Eradat_logos_-_black_and_white_-_121_by_129-removebg-preview.png" alt="Image" id="mobile-logo">
-            </a>
-          </div>
-          <div class="menu-outer">
-            <ul class="navbar-nav ml-auto main-menu">
-              <li class="nav-item active" style="color: #fff;"><a href="index.html" class="nav-link text-uppercase font-weight-bold">Home <span class="sr-only">(current)</span></a></li>
-              <li class="nav-item"><a href="about-2.html" class="nav-link text-uppercase font-weight-bold">About</a></li>
-              <li class="nav-item"><a href="project-element-1.html" class="nav-link text-uppercase font-weight-bold">Properties</a></li>
-              <li class="nav-item"><a href="media.html" class="nav-link text-uppercase font-weight-bold">Media</a></li>
-              <li class="nav-item"><a href="contact.html" class="nav-link text-uppercase font-weight-bold">Contact</a></li>
-            </ul>
-          </div>
-          <div class="contact-info">
-            <h4>Contact Info</h4>
-            <ul>
-              <li>Kuwait City, Kuwait</li>
-              <li><a href="tel:+965 22396666">+965 22396666</a></li>
-              <li><a href="mailto:info@ eradat.me">info@eradat.me</a></li>
-            </ul>
-          </div>
-          <div class="social-links">
-            <ul class="clearfix">
-              <li><a href="#"><span class="fab fa-twitter"></span></a></li>
-              <li><a href="#"><span class="fab fa-facebook-square"></span></a></li>
-              <li><a href="#"><span class="fab fa-instagram"></span></a></li>
-            </ul>
-          </div>
-        </nav>
-      </div>
+    </header>
+    
+     <!-- Mobile Menu -->
+     <div class="mobile-menu">
+       <div class="menu-backdrop"></div>
+       <div class="close-btn"><i class="fas fa-times"></i></div>
+     
+       <nav class="menu-box">
+         <div class="nav-logo">
+           <a href="index.html">
+             <img src="assets/Images-Eradat/Logo/Eradat_logos_-_black_and_white_-_121_by_129-removebg-preview.png" alt="Image" id="mobile-logo">
+           </a>
+         </div>
+         <div class="menu-outer">
+           <ul class="navbar-nav ml-auto main-menu">
+             <li class="nav-item active" style="color: #fff;"><a href="index.html" class="nav-link text-uppercase font-weight-bold">Home <span class="sr-only">(current)</span></a></li>
+             <li class="nav-item"><a href="about-2.html" class="nav-link text-uppercase font-weight-bold">About</a></li>
+             <li class="nav-item"><a href="project-element-1.html" class="nav-link text-uppercase font-weight-bold">Properties</a></li>
+             <li class="nav-item"><a href="media.html" class="nav-link text-uppercase font-weight-bold">Media</a></li>
+             <li class="nav-item"><a href="contact.html" class="nav-link text-uppercase font-weight-bold">Contact</a></li>
+           </ul>
+         </div>
+         <div class="contact-info">
+           <h4>Contact Info</h4>
+           <ul>
+             <li>Kuwait City, Kuwait</li>
+             <li><a href="tel:+965 22396666">+965 22396666</a></li>
+             <li><a href="mailto:info@ eradat.me">info@eradat.me</a></li>
+           </ul>
+         </div>
+         <div class="social-links">
+           <ul class="clearfix">
+             <li><a href="#"><span class="fab fa-twitter"></span></a></li>
+             <li><a href="#"><span class="fab fa-facebook-square"></span></a></li>
+             <li><a href="#"><span class="fab fa-instagram"></span></a></li>
+           </ul>
+         </div>
+       </nav>
+     </div>
     <!-- End Mobile Menu -->
 
     <!--Page Title-->
@@ -114,99 +116,110 @@
     <!--End Page Title-->
 
     <!-- news-section -->
-    <section class="news-section blog-grid sec-pad">
-        <div class="auto-container">
-            <div class="sec-title style-four right">
-                <h5 style="font-size: 38px;">Press Releases</h5>
+    <section class="py-20 bg-white">
+        <div class="w-full max-w-7xl mx-auto px-6 lg:px-8">
+          <div class="text-center mb-12">
+            <h2 class="text-4xl font-bold text-gray-800">Press Releases</h2>
+            <p class="mt-4 text-gray-500 text-base">Stay updated with our latest corporate news and announcements.</p>
+          </div>
+      
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
+      
+            <!-- Aqarat and Sanam Real Estate -->
+            <div class="bg-white overflow-hidden shadow-md hover:shadow-xl transition-shadow">
+              <a href="August_9_2023_1.html">
+                <img src="assets/Images-Eradat/Media/9_August_1.png" alt="Aqarat and Sanam Partnership" class="w-full h-56 object-cover">
+                <div class="p-4">
+                  <p class="text-xs text-gray-400 mb-2">August 9, 2023</p>
+                  <h3 class="text-sm font-semibold text-gray-800 mb-3 leading-snug">
+                    Aqarat and Sanam Real Estate Enters into a Strategic Partnership in "ERADAT".
+                  </h3>
+                  <a href="August_9_2023_1.html" class="flex items-center text-[#9b8579] font-semibold text-xs hover:underline hover:text-[#9b8579]">
+                    <i class="fas fa-arrow-right mr-1"></i> Read More
+                  </a>
+                </div>
+              </a>
             </div>
-            <div class="row clearfix">
-                <div class="col-lg-4 col-md-6 col-sm-12 news-block">
-                    <div class="news-block-one wow fadeInUp animated animated" data-wow-delay="00ms" data-wow-duration="1500ms">
-                        <div class="inner-box">
-                            <figure class="image-box"><a href="August_9_2023_1.html"><img src="assets/Images-Eradat/Media/9_August_1.png" alt="" style="width: 360px; height: 238.5px;"></a></figure>
-                            <div class="lower-content">
-                                <ul class="post-info">
-                                    <li>August 9, 2023</li>
-                                </ul>
-                                <h3><a href="August_9_2023_1.html">Aqarat and Sanam Real Estate Enters into a Strategic Partnership in "ERADAT".</a></h3>
-                                <div class="link"><a href="August_9_2023_1.html"><i class="fas fa-arrow-right"></i><span>Read More</span></a></div>
-                            </div>
-                        </div>
-                    </div>
+      
+            <!-- Sanam's Board of Directors Approves -->
+            <div class="bg-white overflow-hidden shadow-md hover:shadow-xl transition-shadow">
+              <a href="August_9_2023.html">
+                <img src="assets/Images-Eradat/Media/9_August_2.png" alt="Sanam Board Approval" class="w-full h-56 object-cover">
+                <div class="p-4">
+                  <p class="text-xs text-gray-400 mb-2">August 9, 2023</p>
+                  <h3 class="text-sm font-semibold text-gray-800 mb-3 leading-snug">
+                    Sanam's Board of Directors Approves an Initial Partnership with In-Kind Shares in the Capital of the Subsidiary "ERADAT".
+                  </h3>
+                  <a href="August_9_2023.html" class="flex items-center text-[#9b8579] font-semibold text-xs hover:underline hover:text-[#9b8579]">
+                    <i class="fas fa-arrow-right mr-1"></i> Read More
+                  </a>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 news-block">
-                    <div class="news-block-one wow fadeInUp animated animated" data-wow-delay="300ms" data-wow-duration="1500ms">
-                        <div class="inner-box">
-                            <figure class="image-box"><a href="August_9_2023.html"><img src="assets/Images-Eradat/Media/9_August_2.png" alt="" style="width: 360px; height: 238.5px;" ></a></figure>
-                            <div class="lower-content">
-                                <ul class="post-info">
-                                    <li>August 9, 2023</li>
-                                </ul>
-                                <h3><a href="August_9_2023.html">Sanam's Board of Directors Approves an Initial Partnership with an In-Kind Shares in the Capital of the Subsidiary "ERADAT". </a></h3>
-                                <div class="link"><a href="August_9_2023.html"><i class="fas fa-arrow-right"></i><span>Read More</span></a></div>
-                            </div>
-                        </div>
-                    </div>
+              </a>
+            </div>
+      
+            <!-- Formation of Board -->
+            <div class="bg-white overflow-hidden shadow-md hover:shadow-xl transition-shadow">
+              <a href="July_13_2023.html">
+                <img src="assets/Images-Eradat/Media/13_July_2023.png" alt="Board Formation" class="w-full h-56 object-cover">
+                <div class="p-4">
+                  <p class="text-xs text-gray-400 mb-2">July 13, 2023</p>
+                  <h3 class="text-sm font-semibold text-gray-800 mb-3 leading-snug">
+                    Formation of the Board of Directors of ERADAT International Real Estate Company.
+                  </h3>
+                  <a href="July_13_2023.html" class="flex items-center text-[#9b8579] font-semibold text-xs hover:underline hover:text-[#9b8579]">
+                    <i class="fas fa-arrow-right mr-1"></i> Read More
+                  </a>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 news-block">
-                    <div class="news-block-one wow fadeInUp animated animated" data-wow-delay="600ms" data-wow-duration="1500ms">
-                        <div class="inner-box">
-                            <figure class="image-box"><a href="July_13_2023.html"><img src="assets/Images-Eradat/Media/13_July_2023.png" alt="" style="width: 360px; height: 238.5px;"></a></figure>
-                            <div class="lower-content">
-                                <ul class="post-info">
-                                    <li>July 13, 2023</li>
-                                </ul>
-                                <h3><a href="July_13_2023.html">Formation of the Board of Directors of ERADAT International Real Estate Company. </a></h3>
-                                <div class="link"><a href="July_13_2023.html"><i class="fas fa-arrow-right"></i><span>Read More</span></a></div>
-                            </div>
-                        </div>
-                    </div>
+              </a>
+            </div>
+      
+            <!-- Extraordinary GA Decisions -->
+            <div class="bg-white overflow-hidden shadow-md hover:shadow-xl transition-shadow">
+              <a href="June 7.html">
+                <img src="assets/Images-Eradat/Media/Media 1.jpg" alt="GA Decisions" class="w-full h-56 object-cover">
+                <div class="p-4">
+                  <p class="text-xs text-gray-400 mb-2">June 7, 2023</p>
+                  <h3 class="text-sm font-semibold text-gray-800 mb-3 leading-snug">
+                    Decisions of the Extraordinary GA: Capital Increase, Name Change, and Sharia Compliance.
+                  </h3>
+                  <a href="June 7.html" class="flex items-center text-[#9b8579] font-semibold text-xs hover:underline hover:text-[#9b8579]">
+                    <i class="fas fa-arrow-right mr-1"></i> Read More
+                  </a>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 news-block">
-                    <div class="news-block-one wow fadeInUp animated animated" data-wow-delay="00ms" data-wow-duration="1500ms">
-                        <div class="inner-box">
-                            <figure class="image-box"><a href="June 7.html"><img src="assets/Images-Eradat/Media/Media 1.jpg" alt=""></a></figure>
-                            <div class="lower-content">
-                                <ul class="post-info">
-                                    <li>June 7, 2023</li>
-                                </ul>
-                                <h3><a href="June 7.html">Decisions of the Extraordinary GA: Capital Increase, Name Change, and Sharia Compliance</a></h3>
-                                <!-- <p>Exea conse quat duis irurey dolor sed reprehen derit volupta velit cilum lorem incididunt labore sed magna exceptur aliqua.</p> -->
-                                <div class="link"><a href="June 7.html"><i class="fas fa-arrow-right"></i><span>Read More</span></a></div>
-                            </div>
-                        </div>
-                    </div>
+              </a>
+            </div>
+      
+            <!-- Property Exchange Approval -->
+            <div class="bg-white overflow-hidden shadow-md hover:shadow-xl transition-shadow">
+              <a href="May 11.html">
+                <img src="assets/Images-Eradat/Media/Media 2.jpg" alt="Property Exchange" class="w-full h-56 object-cover">
+                <div class="p-4">
+                  <p class="text-xs text-gray-400 mb-2">May 11, 2023</p>
+                  <h3 class="text-sm font-semibold text-gray-800 mb-3 leading-snug">
+                    Board-approved Property Exchange: Sanam Real Estate and Fanan Real Estate Company.
+                  </h3>
+                  <a href="May 11.html" class="flex items-center text-[#9b8579] font-semibold text-xs hover:underline hover:text-[#9b8579]">
+                    <i class="fas fa-arrow-right mr-1"></i> Read More
+                  </a>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 news-block">
-                    <div class="news-block-one wow fadeInUp animated animated" data-wow-delay="300ms" data-wow-duration="1500ms">
-                        <div class="inner-box">
-                            <figure class="image-box"><a href="May 11.html"><img src="assets/Images-Eradat/Media/Media 2.jpg" alt=""></a></figure>
-                            <div class="lower-content">
-                                <ul class="post-info">
-                                    <li>May 11, 2023</li>
-                                </ul>
-                                <h3><a href="May 11.html">Board-approved Property Exchange: Sanam Real Estate and Fanan Real Estate Company</a></h3>
-                                <!-- <p>Exea conse quat duis irurey dolor sed reprehen derit volupta velit cilum lorem incididunt labore sed magna exceptur aliqua.</p> -->
-                                <div class="link"><a href="May 11.html"><i class="fas fa-arrow-right"></i><span>Read More</span></a></div>
-                            </div>
-                        </div>
-                    </div>
+              </a>
+            </div>
+      
+            <!-- Real Estate Swap Approval -->
+            <div class="bg-white overflow-hidden shadow-md hover:shadow-xl transition-shadow">
+              <a href="16 Mar.html">
+                <img src="assets/Images-Eradat/Media/Media 3.jpg" alt="Real Estate Swap" class="w-full h-56 object-cover">
+                <div class="p-4">
+                  <p class="text-xs text-gray-400 mb-2">March 16, 2023</p>
+                  <h3 class="text-sm font-semibold text-gray-800 mb-3 leading-snug">
+                    Real Estate Swap Approval: Sanam Real Estate Company and Fanan Real Estate Company.
+                  </h3>
+                  <a href="16 Mar.html" class="flex items-center text-[#9b8579] font-semibold text-xs hover:underline hover:text-[#9b8579]">
+                    <i class="fas fa-arrow-right mr-1"></i> Read More
+                  </a>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 news-block">
-                    <div class="news-block-one wow fadeInUp animated animated" data-wow-delay="600ms" data-wow-duration="1500ms">
-                        <div class="inner-box">
-                            <figure class="image-box"><a href="16 Mar.html"><img src="assets/Images-Eradat/Media/Media 3.jpg" alt=""></a></figure>
-                            <div class="lower-content">
-                                <ul class="post-info">
-                                    <li>March 16, 2023</li>
-                                </ul>
-                                <h3><a href="16 Mar.html">Real Estate Swap Approval: Sanam Real Estate Company and Fanan Real Estate Company</a></h3>
-                                <!-- <p>Exea conse quat duis irurey dolor sed reprehen derit volupta velit cilum lorem incididunt labore sed magna exceptur aliqua.</p> -->
-                                <div class="link"><a href="16 Mar.html"><i class="fas fa-arrow-right"></i><span>Read More</span></a></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              </a>
+            </div>
                 
                 <!-- <div class="col-lg-4 col-md-6 col-sm-12 news-block">
                     <div class="news-block-one wow fadeInUp animated animated" data-wow-delay="00ms" data-wow-duration="1500ms">
@@ -290,78 +303,67 @@
     <!-- news-section end -->
 
     <!-- main-footer -->
-    <footer class="main-footer alternet-3" style="background-color: black;">
-        <div class="footer-top">
-            <div class="auto-container">
-                <div class="widget-section">
-                    <div class="row clearfix">
-                        <div class="col-lg-6 col-md-6 col-sm-12 footer-column">
-                            <div class="footer-widget logo-widget">
-                                <figure class="footer-logo"><a href="index.html"><img src="assets/Images-Eradat/Logo/Eradat_logos_-_black_and_white-removebg-preview.png" alt="Eradat Logo"></a></figure>
-                                <div class="text">
-                                    <p>ERADAT International Real Estate, A Kuwaiti Shareholding Company, incorporated in 2006, with a current paid up capital of KD 13.2 million. <br>Commercial Registration no. 112646 </p>
-                                </div>
-                                <ul class="info-list clearfix">
-                                    <li><i class="fas fa-map-marker-alt"></i>Salhiya Complex, Gate 1, Floor 5, Salhiya, Kuwait</li>
-                                    <li><i class="fas fa-envelope"></i>Email<a href="mailto:info@ eradat.me">info@eradat.me</a></li>
-                                    <li><i class="fas fa-headphones"></i>Contact No. <a href="tel:+965 239xxxxx">+965 22396666 </a></li>
-                                </ul>
-                                <ul class="social-links clearfix">
-                                  <li><a href="https://twitter.com/Eradatkw"><i class="fab fa-twitter"></i></a></li>
-                                  <li><a href="https://www.instagram.com/eradatkw/"><i class="fab fa-instagram"></i></a></li>
-                                  <li><a href="https://www.linkedin.com/in/eradat-international-real-estate-5ab72127a"><i class="fab fa-linkedin-in"></i></a></li>
-                              </ul>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-sm-12 footer-column">
-                            <div class="footer-widget links-widget ml-70">
-                                <div class="widget-title">
-                                    <h4>Useful Links</h4>
-                                </div>
-                                <div class="widget-content">
-                                    <ul class="list clearfix">
-                                        <li><a href="index.html">Home</a></li>
-                                        <li><a href="about-2.html">About Us</a></li>
-                                        <li><a href="blog-grid.html">Properties</a></li>
-                                        <li><a href="media.html">Latest News</a></li>
-                                        <!-- <li><a href="#">Investor Relations</a></li> -->
-                                        <li><a href="contact.html">Contact Us</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-lg-12 col-md-12 col-sm-12 p-tb20">
-                              <div class="wt-icon-box-wraper left bdr-1 bdr-gray-dark p-tb15 p-lr10 clearfix" style="margin: 150px 0 0 150px;">
-                                  <div class="icon-md site-text-primary">
-                                      <a href="https://eradatme.sharepoint.com/sites/Eradat-RealEstateInvestmentCompany">
-                                          <img src="assets/Images-Eradat/Favicons/sharepoint-logotype.png" alt="https://www.flaticon.com/free-icons/share title=share icons Share icons created by Freepik - Flaticon">
-                                      </a>
-                                  </div>
-                                  <div class="icon-content">
-                                      <a href="https://eradatme.sharepoint.com/sites/Eradat-RealEstateInvestmentCompany" class="sharepoint-link">
-                                          <h5 style="color: #fff;" class="wt-tilte text-uppercase m-b0">Login portal</h5>
-                                          <p class="m-b0">Access Here</p>
-                                      </a>
-                                  </div>  
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                    </div>
-                </div>
+    <footer class="bg-black text-white">
+        <div class="max-w-7xl mx-auto px-6 py-10 grid grid-cols-1 md:grid-cols-2 gap-24">
+      
+          <!-- Left Side: Logo + Info -->
+          <div class="space-y-6">
+            <a href="index.html">
+              <img src="assets/Images-Eradat/Logo/Eradat_logos_-_black_and_white-removebg-preview.png" alt="Eradat Logo" class="h-24">
+            </a>
+            <p class="text-gray-300 text-sm">
+              ERADAT International Real Estate, A Kuwaiti Shareholding Company, incorporated in 2006, with a current paid-up capital of KD 13.2 million.<br/>
+              Commercial Registration no. 112646
+            </p>
+            <ul class="space-y-2 text-gray-400 text-sm">
+              <li><i class="fas fa-map-marker-alt mr-2"></i> Salhiya Complex, Gate 1, Floor 5, Salhiya, Kuwait</li>
+              <li><i class="fas fa-envelope mr-2"></i> <a href="mailto:info@eradat.me" class="underline">info@eradat.me</a></li>
+              <li><i class="fas fa-phone-alt mr-2"></i> <a href="tel:+96522396666" class="underline">+965 22396666</a></li>
+            </ul>
+            <div class="flex space-x-4 mt-4">
+              <a href="https://twitter.com/Eradatkw" target="_blank"><i class="fab fa-twitter"></i></a>
+              <a href="https://www.instagram.com/eradatkw/" target="_blank"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/eradat-international-real-estate-5ab72127a" target="_blank"><i class="fab fa-linkedin-in"></i></a>
             </div>
+          </div>
+      
+          <!-- Right Side: Useful Links + SharePoint -->
+          <div class="flex flex-col justify-between">
+            
+            <div>
+              <h4 class="text-lg text-white font-semibold mb-4">Useful Links</h4>
+              <ul class="space-y-2 text-sm">
+                <li><a href="index.html" class="text-white hover:text-[#9b8579] transition-colors duration-300">Home</a></li>
+                <li><a href="about-2.html" class="text-white hover:text-[#9b8579] transition-colors duration-300">About Us</a></li>
+                <li><a href="blog-grid.html" class="text-white hover:text-[#9b8579] transition-colors duration-300">Properties</a></li>
+                <li><a href="media.html" class="text-white hover:text-[#9b8579] transition-colors duration-300">Latest News</a></li>
+                <li><a href="contact.html" class="text-white hover:text-[#9b8579] transition-colors duration-300">Contact Us</a></li>
+              </ul>                       
+            </div>
+      
+            <div class="flex items-center space-x-4 mt-8 hover:brightness-110 transition-all duration-300">
+              <a href="https://eradatme.sharepoint.com/sites/Eradat-RealEstateInvestmentCompany" target="_blank">
+                <img src="assets/Images-Eradat/Favicons/sharepoint-logotype.png" alt="SharePoint" class="h-12">
+              </a>
+              <div>
+                <a href="https://eradatme.sharepoint.com/sites/Eradat-RealEstateInvestmentCompany" target="_blank" class="text-white text-sm font-semibold uppercase hover:text-[#9b8579] transition-colors duration-300">
+                  Login Portal
+                </a>
+                <p class="text-gray-400 text-xs">Access Here</p>
+              </div>
+            </div>          
+      
+          </div>
+      
         </div>
-        <div class="footer-bottom">
-            <div class="auto-container">
-                <div class="copyright"><p>&copy; 2023 <a href="index.html">Eradat</a> - Real Estate Investment Company. All rights reserved.</p></div>
-            </div>
+      
+        <div class="border-t border-gray-700 mt-10">
+          <div class="text-center py-4 text-gray-500 text-xs">
+            &copy; 2023 <a href="index.html" class="hover:underline">Eradat</a> - Real Estate Investment Company. All rights reserved.
+          </div>
         </div>
     </footer>
     <!-- main-footer end -->
-
-    <!--Scroll to top-->
-    <button class="scroll-top scroll-to-target" data-target="html">
-        <span class="fa fa-arrow-up"></span>
-    </button>
 
 <!-- jequery plugins -->
 <script src="assets/js/jquery.js"></script>
