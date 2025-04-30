@@ -27,6 +27,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@400&display=swap" rel="stylesheet">
 
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
 <style>
   body {
     font-family: 'Noto Kufi Arabic', sans-serif;
@@ -67,8 +69,8 @@
             </div>
           </div>
         </nav>
-      </header>
-      
+    </header>
+    
       <!-- Mobile Menu -->
       <div class="mobile-menu">
         <div class="menu-backdrop"></div>
@@ -121,178 +123,158 @@
     <!--End Page Title-->
 
     <!-- project-section -->
-    <section class="project-section" style="background-color: #9b8579;">
-        <div class="fluid-container">
-            <div class="row g-0">
-                <div class="col-md-6">
-                    <div class="project-block-one">
-                        <div class="inner-box">
-                            <a href="Durrar_Complex_ar.html">
-                                <figure class="image-box">
-                                    <img src="assets/Images-Eradat/Properties_Images/Darrar_Complex/Durrar_complex_2_1482x959.jpg" alt="">
-                                </figure>
-                            </a>    
-                            <div class="lower-content">
-                                <p>سكني</p>
-                                <h2><a href="Durrar_Complex_ar.html">مجمع الدرر </a></h2>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-block-one">
-                        <div class="inner-box">
-                            <a href="Domus_1_ar.html">
-                                <figure class="image-box">
-                                    <img src="assets/Images-Eradat/Properties Images/719x582/Domus 1 - Dubai.webp" alt="">
-                                </figure>
-                            </a>
-                            <div class="lower-content">
-                                <p>سكني</p>
-                                <h2><a href="Domus_1_ar.html">دوموس</a></h2>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-block-one">
-                        <div class="inner-box">
-                            <a href="Farwaniya_Property_ar.html">
-                                <figure class="image-box">
-                                    <img src="assets/Images-Eradat/Properties_Images/Farwaniya_residential_building/Farwaniya_buidling_side_full_view.jpg" alt="">
-                                </figure>
-                            </a>
-                            <div class="lower-content">
-                                <p>سكني</p>
-                                <h2><a href="Farwaniya_Property_ar.html">عقار الفروانية</a></h2>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="project-block-one">
-                        <div class="inner-box">
-                            <a href="Fintas_Complex_ar.html">
-                                <figure class="image-box">
-                                    <img src="assets/Images-Eradat/Properties_Images/fintas/Fintas_residential_complex_2.jpg" alt="">
-                                </figure>
-                            </a>
-                            <div class="lower-content">
-                                <p>تجاري</p>
-                                <h2><a href="Fintas_Complex_ar.html">مجمع الفنطاس</a></h2>
-                            </div>
-                        </div>
-                    </div> 
-                    <div class="project-block-one">
-                        <div class="inner-box">
-                            <a href="Al_Manar_Complex_ar.html">
-                                <figure class="image-box">
-                                    <img src="assets/Images-Eradat/Properties_Images/Al_Manar_complex/Al_Manar_complex_2-min.jpg" alt="">
-                                </figure>
-                            </a>
-                            <div class="lower-content">
-                                <p>تجاري</p>
-                                <h2><a href="Al_Manar_Complex_ar.html">مجمع المنار</a></h2>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-block-one">
-                        <div class="inner-box">
-                            <a href="Bneid_Al_Gar_Medical_Centre_ar.html">
-                                <figure class="image-box">
-                                    <img src="assets/Images-Eradat/Properties_Images/Bneid_al_gar/Bneid_al_gar_frontal_view.jpeg" alt="">
-                                </figure>
-                            </a>
-                            <div class="lower-content">
-                                <p>طبي</p>
-                                <h2><a href="Bneid_Al_Gar_Medical_Centre_ar.html">مركز بنيد القار الطبي</a></h2>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-block-one col-12 img-fluid">
-                    <div class="inner-box">
-                        <a href="Ibn_Khaldoun_Complex_ar.html">
-                            <figure class="image-box">
-                                <img src="assets/Images-Eradat/Properties_Images/Ibn_khaldoon/Ibn_khaldoon_side_view_1_1_1500x700.jpg" alt="" >
-                            </figure>
-                        </a>
-                        <div class="lower-content">
-                            <p>تجاري</p>
-                            <h2><a href="Ibn_Khaldoun_Complex_ar.html">مجمع لؤلؤة ابن خلدون</a></h2>
-                        </div>
-                    </div>
-                </div>
+    <section class="py-20 bg-[#9b8579]" dir="rtl">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      
+            <!-- Property 1 -->
+            <div class="bg-white rounded-lg overflow-hidden shadow">
+              <a href="Durrar_Complex_ar.html">
+                <img src="assets/Images-Eradat/Properties_Images/Darrar_Complex/Durrar_complex_2_1482x959.jpg" alt="" class="w-full h-64 object-cover">
+              </a>
+              <div class="p-4 text-right">
+                <p class="text-sm text-gray-500">سكني</p>
+                <h2 class="text-xl font-bold text-gray-800"><a href="Durrar_Complex_ar.html">مجمع الدرر</a></h2>
+              </div>
             </div>
+      
+            <!-- Property 2 -->
+            <div class="bg-white rounded-lg overflow-hidden shadow">
+              <a href="Domus_1_ar.html">
+                <img src="assets/Images-Eradat/Properties Images/719x582/Domus 1 - Dubai.webp" alt="" class="w-full h-64 object-cover">
+              </a>
+              <div class="p-4 text-right">
+                <p class="text-sm text-gray-500">سكني</p>
+                <h2 class="text-xl font-bold text-gray-800"><a href="Domus_1_ar.html">دوموس</a></h2>
+              </div>
+            </div>
+      
+            <!-- Property 3 -->
+            <div class="bg-white rounded-lg overflow-hidden shadow">
+              <a href="Farwaniya_Property_ar.html">
+                <img src="assets/Images-Eradat/Properties_Images/Farwaniya_residential_building/Farwaniya_buidling_side_full_view.jpg" alt="" class="w-full h-64 object-cover">
+              </a>
+              <div class="p-4 text-right">
+                <p class="text-sm text-gray-500">سكني</p>
+                <h2 class="text-xl font-bold text-gray-800"><a href="Farwaniya_Property_ar.html">عقار الفروانية</a></h2>
+              </div>
+            </div>
+      
+            <!-- Property 4 -->
+            <div class="bg-white rounded-lg overflow-hidden shadow">
+              <a href="Fintas_Complex_ar.html">
+                <img src="assets/Images-Eradat/Properties_Images/fintas/Fintas_residential_complex_2.jpg" alt="" class="w-full h-64 object-cover">
+              </a>
+              <div class="p-4 text-right">
+                <p class="text-sm text-gray-500">تجاري</p>
+                <h2 class="text-xl font-bold text-gray-800"><a href="Fintas_Complex_ar.html">مجمع الفنطاس</a></h2>
+              </div>
+            </div>
+      
+            <!-- Property 5 -->
+            <div class="bg-white rounded-lg overflow-hidden shadow">
+              <a href="Al_Manar_Complex_ar.html">
+                <img src="assets/Images-Eradat/Properties_Images/Al_Manar_complex/Al_Manar_complex_2-min.jpg" alt="" class="w-full h-64 object-cover">
+              </a>
+              <div class="p-4 text-right">
+                <p class="text-sm text-gray-500">تجاري</p>
+                <h2 class="text-xl font-bold text-gray-800"><a href="Al_Manar_Complex_ar.html">مجمع المنار</a></h2>
+              </div>
+            </div>
+      
+            <!-- Property 6 -->
+            <div class="bg-white rounded-lg overflow-hidden shadow">
+              <a href="Bneid_Al_Gar_Medical_Centre_ar.html">
+                <img src="assets/Images-Eradat/Properties_Images/Bneid_al_gar/Bneid_al_gar_frontal_view.jpeg" alt="" class="w-full h-64 object-cover">
+              </a>
+              <div class="p-4 text-right">
+                <p class="text-sm text-gray-500">طبي</p>
+                <h2 class="text-xl font-bold text-gray-800"><a href="Bneid_Al_Gar_Medical_Centre_ar.html">مركز بنيد القار الطبي</a></h2>
+              </div>
+            </div>
+      
+          </div>
+      
+          <!-- Full Width Property -->
+          <div class="mt-10">
+            <div class="bg-white rounded-lg overflow-hidden shadow">
+              <a href="Ibn_Khaldoun_Complex_ar.html">
+                <img src="assets/Images-Eradat/Properties_Images/Ibn_khaldoon/Ibn_khaldoon_side_view_1_1_1500x700.jpg" alt="" class="w-full h-72 object-cover">
+              </a>
+              <div class="p-4 text-right">
+                <p class="text-sm text-gray-500">تجاري</p>
+                <h2 class="text-xl font-bold text-gray-800"><a href="Ibn_Khaldoun_Complex_ar.html">مجمع لؤلؤة ابن خلدون</a></h2>
+              </div>
+            </div>
+          </div>
+      
         </div>
-    </section>
+      </section>
+    
     
     <!-- project-section end -->
 
     <!-- main-footer -->
-    <footer class="main-footer alternet-3" style="background-color: black;">
-        <div class="footer-top">
-            <div class="auto-container">
-                <div class="widget-section">
-                    <div class="row clearfix">
-                        <div class="col-lg-6 col-md-6 col-sm-12 footer-column">
-                            <div class="footer-widget logo-widget">
-                                <figure class="footer-logo"><a href="index.html"><img src="assets/Images-Eradat/Logo/Eradat_logos_-_black_and_white-removebg-preview.png" alt="Eradat Logo"></a></figure>
-                                <div class="text">
-                                    <p>شركة إيرادات الدولية العقارية هي شركة كويتية مساهمة تأسست في عام 2006، برأس مال مدفوع بقيمة 13.2 مليون دينار كويتي.  
-                                    <br>رقم السجل التجاري 112646 </p>
-                                </div>
-                                <ul class="info-list clearfix">
-                                    <li><i class="fas fa-map-marker-alt"></i>Salhiya Complex, Gate 1, Floor 5, Salhiya, Kuwait</li>
-                                    <li><i class="fas fa-envelope"></i>Email <a href="mailto:info@ eradat.me">info@eradat.me</a></li>
-                                    <li><i class="fas fa-headphones"></i>Contact No. <a href="tel:+965 22396666"> 22396666 965+ </a></li>
-                                </ul>
-                                <ul class="social-links clearfix">
-                                  <li><a href="https://twitter.com/Eradatkw"><i class="fab fa-twitter"></i></a></li>
-                                  <li><a href="https://www.instagram.com/eradatkw/"><i class="fab fa-instagram"></i></a></li>
-                                  <li><a href="https://www.linkedin.com/in/eradat-international-real-estate-5ab72127a"><i class="fab fa-linkedin-in"></i></a></li>
-                              </ul>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-sm-12 footer-column">
-                            <div class="footer-widget links-widget ml-70">
-                                <div class="widget-title">
-                                    <h4> روابط مفيدة</h4>
-                                </div>
-                                <div class="widget-content">
-                                    <ul class="list clearfix">
-                                        <li><a href="index_ar.html">الرئيسية</a></li>
-                                        <li><a href="about_ar.html">من نحن</a></li>
-                                        <li><a href="project-element-1_ar.html">العقارات</a></li>
-                                        <li><a href="media_ar.html">آخر الأخبار</a></li>
-                                        <!-- <li><a href="#">Investor Relations</a></li> -->
-                                        <li><a href="contact_ar.html">اتصل بنا</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-lg-12 col-md-12 col-sm-6 p-tb20">
-                              <div class="wt-icon-box-wraper left bdr-1 bdr-gray-dark p-tb15 p-lr10 clearfix ar-login-portal">
-                                  <div class="icon-md site-text-primary">
-                                      <a href="https://eradatme.sharepoint.com/sites/Eradat-RealEstateInvestmentCompany">
-                                          <img src="assets/Images-Eradat/Favicons/sharepoint-logotype.png" alt="https://www.flaticon.com/free-icons/share title=share icons Share icons created by Freepik - Flaticon">
-                                      </a>
-                                  </div>
-                                  <div class="icon-content">
-                                      <a href="https://eradatme.sharepoint.com/sites/Eradat-RealEstateInvestmentCompany" class="sharepoint-link">
-                                          <h5 style="color: #fff;" class="wt-tilte text-uppercase m-b0">بوابة تسجيل الدخول </h5>
-                                          <p class="m-b0">الوصول هنا</p>
-                                      </a>
-                                  </div>  
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                    </div>
-                </div>
+    <footer class="bg-black text-white" dir="rtl">
+        <div class="max-w-7xl mx-auto px-6 py-10 grid grid-cols-1 md:grid-cols-2 gap-24">
+      
+          <!-- Right Side: Logo + Info -->
+          <div class="space-y-6 text-right">
+            <a href="index_ar.html">
+              <img src="assets/Images-Eradat/Logo/Eradat_logos_-_black_and_white-removebg-preview.png" alt="Eradat Logo" class="h-24 md:ml-0 align-right">
+            </a>
+            <p class="text-gray-300 text-sm leading-loose">
+              شركة إيرادات الدولية العقارية هي شركة كويتية مساهمة تأسست في عام 2006، برأس مال مدفوع بقيمة 13.2 مليون دينار كويتي.<br/>
+              رقم السجل التجاري: 112646
+            </p>
+            <ul class="space-y-2 text-gray-400 text-sm">
+              <li><i class="fas fa-map-marker-alt ml-2"></i> مجمع الصالحية، البوابة الأولى، الطابق الخامس، الصالحية، الكويت</li>
+              <li><i class="fas fa-envelope ml-2"></i> <a href="mailto:info@eradat.me" class="underline">info@eradat.me</a></li>
+              <li><i class="fas fa-phone-alt ml-2"></i> <a href="tel:+96522396666" class="underline">+965 22396666</a></li>
+            </ul>
+            <div class="flex space-x-4 justify-start md:justify-end flex-row-reverse mt-4">
+              <a href="https://twitter.com/Eradatkw" target="_blank" class="hover:text-[#9b8579]"><i class="fab fa-twitter"></i></a>
+              <a href="https://www.instagram.com/eradatkw/" target="_blank" class="hover:text-[#9b8579]"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/eradat-international-real-estate-5ab72127a" target="_blank" class="hover:text-[#9b8579]"><i class="fab fa-linkedin-in"></i></a>
             </div>
-        </div>
-        <div class="footer-bottom">
-            <div class="auto-container">
-                <div class="copyright"><p>&copy; 2023 <a href="index_ar.html">ERADAT</a> - Real Estate Investment Company. All rights reserved.</p></div>
+          </div>
+      
+          <!-- Left Side: Useful Links + SharePoint -->
+          <div class="space-y-8 text-right">
+            <div>
+              <h4 class="text-lg font-semibold mb-4 text-white">روابط مفيدة</h4>
+              <ul class="space-y-2 text-sm">
+                <li><a href="index_ar.html" class="text-white hover:text-[#9b8579] transition-colors">الصفحة الرئيسية</a></li>
+                <li><a href="about-2_ar.html" class="text-white hover:text-[#9b8579] transition-colors">من نحن</a></li>
+                <li><a href="blog-grid_ar.html" class="text-white hover:text-[#9b8579] transition-colors">العقارات</a></li>
+                <li><a href="media_ar.html" class="text-white hover:text-[#9b8579] transition-colors">وسائل الإعلام</a></li>
+                <li><a href="contact_ar.html" class="text-white hover:text-[#9b8579] transition-colors">اتصل بنا</a></li>
+              </ul>
             </div>
+      
+            <!-- SharePoint Login -->
+            <div class="flex items-center justify-start md:justify-end space-x-4 flex-row-reverse mt-4">
+              <a href="https://eradatme.sharepoint.com/sites/Eradat-RealEstateInvestmentCompany" target="_blank">
+                <img src="assets/Images-Eradat/Favicons/sharepoint-logotype.png" alt="SharePoint" class="h-12">
+              </a>
+              <div>
+                <a href="https://eradatme.sharepoint.com/sites/Eradat-RealEstateInvestmentCompany" target="_blank" class="text-white text-sm font-semibold uppercase hover:text-[#9b8579]">
+                  بوابة تسجيل الدخول
+                </a>
+                <p class="text-gray-400 text-xs">الوصول هنا</p>
+              </div>
+            </div>
+          </div>
+      
         </div>
-    </footer>
+      
+        <!-- Bottom Footer -->
+        <div class="border-t border-gray-700 mt-10">
+          <div class="text-center py-4 text-gray-500 text-xs">
+            &copy; 2023 <a href="index_ar.html" class="hover:underline">إيرادات</a> - جميع الحقوق محفوظة.
+          </div>
+        </div>
+      </footer>
     <!-- main-footer end -->
 
     <!--Scroll to top-->
