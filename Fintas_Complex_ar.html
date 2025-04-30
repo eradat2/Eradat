@@ -28,6 +28,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@400&display=swap" rel="stylesheet">
 
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
 <!-- Vendors CSS -->
 <link rel="stylesheet" href="assets/Properties_styling/vendors/bootstrap-select/css/bootstrap-select.min.css">
 <link rel="stylesheet" href="assets/Properties_styling/vendors/slick/slick.min.css">
@@ -53,70 +55,70 @@
 
   <!-- main header -->
   <header class="main-header style-one style-six">
-      <nav class="navbar navbar-margin navbar-expand-lg fixed-top py-3">
-        <div class="container-fluid">
-          <div class="mobile-logo">
-            <a href="index.html">
-              <img src="assets/Images-Eradat/Logo/Eradat_logos_-_black_and_white_-_121_by_129-removebg-preview.png" alt="Image" id="logo">
-            </a>
-          </div>
-          <!-- Mobile Navigation Toggler -->
-          <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right mobile-nav-toggler">
-            <i class="fa fa-bars"></i>
-          </button>
-          <div id="navbarSupportedContent" class="collapse navbar-collapse ar-navbar">
-            <ul class="navbar-nav mr-auto main-menu">
-              <li class="nav-item active"><a href="index_ar.html" class="nav-link text-uppercase font-weight-bold">الصفحة الرئيسية<span class="sr-only">(current)</span></a></li>
-              <li class="nav-item"><a href="about_ar.html" class="nav-link text-uppercase font-weight-bold">من نحن  </a></li>
-              <li class="nav-item"><a href="project-element-1_ar.html" class="nav-link text-uppercase font-weight-bold">العقارات </a></li>
-              <li class="nav-item"><a href="media_ar.html" class="nav-link text-uppercase font-weight-bold">وسائل الإعلام</a></li>
-              <li class="nav-item"><a href="contact_ar.html" class="nav-link text-uppercase font-weight-bold">اتصل بنا</a></li>
-              <li class="nav-item" style="padding-right: 20px;">
-                <a href="Fintas_complex_1 - Copy.html" onclick="changeLanguage('en')" class="nav-link font-weight-bold">English</a>
-              </li>
-            </ul>
-          </div>
+    <nav class="navbar navbar-margin navbar-expand-lg fixed-top py-3">
+      <div class="container-fluid">
+        <div class="mobile-logo">
+          <a href="index.html">
+            <img src="assets/Images-Eradat/Logo/Eradat_logos_-_black_and_white_-_121_by_129-removebg-preview.png" alt="Image" id="logo">
+          </a>
         </div>
-      </nav>
-    </header>
-      
-      <!-- Mobile Menu -->
-      <div class="mobile-menu">
-        <div class="menu-backdrop"></div>
-        <div class="close-btn"><i class="fas fa-times"></i></div>
-        <nav class="menu-box">
-          <div class="nav-logo">
-            <a href="index.html">
-              <img src="assets/Images-Eradat/Logo/Eradat_logos_-_black_and_white_-_121_by_129-removebg-preview.png" alt="Image" id="mobile-logo">
-            </a>
-          </div>
-          <div class="menu-outer">
-            <ul class="navbar-nav mr-auto main-menu">
-              <li class="nav-item active" style="color: #fff;"><a href="index.html" class="nav-link text-uppercase font-weight-bold">Home <span class="sr-only">(current)</span></a></li>
-              <li class="nav-item"><a href="about-2.html" class="nav-link text-uppercase font-weight-bold">About</a></li>
-              <li class="nav-item"><a href="project-element-1.html" class="nav-link text-uppercase font-weight-bold">Properties</a></li>
-              <li class="nav-item"><a href="media.html" class="nav-link text-uppercase font-weight-bold">Media</a></li>
-              <li class="nav-item"><a href="contact.html" class="nav-link text-uppercase font-weight-bold">Contact</a></li>
-            </ul>
-          </div>
-          <div class="contact-info">
-            <h4>Contact Info</h4>
-            <ul>
-              <li>Muhammad Thannayan Al Ghanem Street, Salhiya Complex</li>
-              <li><a href="tel:+965 22396666">+965 22396666</a></li>
-              <li><a href="mailto:info@ eradat.me">info@eradat.me</a></li>
-            </ul>
-          </div>
-          <div class="social-links">
-            <ul class="clearfix">
-              <li><a href="#"><span class="fab fa-twitter"></span></a></li>
-              <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-              <li><a href="#"><span class="fab fa-instagram"></span></a></li>
-            </ul>
-          </div>
-        </nav>
+        <!-- Mobile Navigation Toggler -->
+        <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right mobile-nav-toggler">
+          <i class="fa fa-bars"></i>
+        </button>
+  
+        <div id="navbarSupportedContent" class="collapse navbar-collapse ar-navbar">
+          <ul class="navbar-nav mr-auto main-menu">
+            <li class="nav-item active"><a href="index_ar.html" class="nav-link text-uppercase">الصفحة الرئيسية<span class="sr-only">(current)</span></a></li>
+            <li class="nav-item"><a href="about_ar.html" class="nav-link text-uppercase ">من نحن  </a></li>
+            <li class="nav-item"><a href="project-element-1_ar.html" class="nav-link text-uppercase">العقارات </a></li>
+            <li class="nav-item"><a href="media_ar.html" class="nav-link text-uppercase">وسائل الإعلام</a></li>
+            <li class="nav-item"><a href="contact_ar.html" class="nav-link text-uppercase">اتصل بنا</a></li>
+            <li class="nav-item" style="padding-right: 20px;">
+                <a href="about-2.html" onclick="changeLanguage('en')" class="nav-link font-weight-bold">English</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    <!-- End Mobile Menu -->
+    </nav>
+  </header>
+
+<!-- Mobile Menu -->
+  <div class="mobile-menu">
+  <div class="menu-backdrop"></div>
+  <div class="close-btn"><i class="fas fa-times"></i></div>
+  <nav class="menu-box">
+    <div class="nav-logo">
+      <a href="index.html">
+        <img src="assets/Images-Eradat/Logo/Eradat_logos_-_black_and_white_-_121_by_129-removebg-preview.png" alt="Image" id="mobile-logo">
+      </a>
+    </div>
+    <div class="menu-outer">
+      <ul class="navbar-nav mr-auto main-menu">
+        <li class="nav-item active" style="color: #fff;"><a href="index.html" class="nav-link text-uppercase font-weight-bold">Home <span class="sr-only">(current)</span></a></li>
+        <li class="nav-item"><a href="about-2.html" class="nav-link text-uppercase font-weight-bold">About</a></li>
+        <li class="nav-item"><a href="project-element-1.html" class="nav-link text-uppercase font-weight-bold">Properties</a></li>
+        <li class="nav-item"><a href="media.html" class="nav-link text-uppercase font-weight-bold">Media</a></li>
+        <li class="nav-item"><a href="contact.html" class="nav-link text-uppercase font-weight-bold">Contact</a></li>
+      </ul>
+    </div>
+    <div class="contact-info">
+      <h4>Contact Info</h4>
+      <ul>
+        <li>Salhiya Complex, Gate 1, Floor 5, Salhiya, Kuwait</li>
+        <li><a href="tel:+965415651651">+965 22396666</a></li>
+        <li><a href="mailto:info@ eradat.me">info@eradat.me</a></li>
+      </ul>
+    </div>
+    <div class="social-links">
+      <ul class="social-links clearfix">
+          <li><a href="https://twitter.com/Eradatkw"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="https://www.instagram.com/eradatkw/"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/eradat-international-real-estate-5ab72127a"><i class="fab fa-linkedin-in"></i></a></li>
+      </ul>
+    </div>
+  </nav>
+  </div><!--End Mobile Menu -->
 
     <!--Page Title-->
     <main id="content">
@@ -246,72 +248,66 @@
     </main>
 
     <!-- main-footer -->
-    <footer class="main-footer alternet-3" style="background-color: black;">
-      <div class="footer-top">
-          <div class="auto-container">
-              <div class="widget-section">
-                  <div class="row clearfix">
-                      <div class="col-lg-3 col-md-9 col-sm-12 footer-column">
-                          <div class="footer-widget logo-widget">
-                              <figure class="footer-logo"><a href="index.html"><img src="assets/Images-Eradat/Logo/Eradat_logos_-_black_and_white-removebg-preview.png" alt="Eradat Logo"></a></figure>
-                              <div class="text">
-                                  <p> شركة إيرادات الدولية العقارية هي شركة كويتية مساهمة تأسست في عام 2006، برأس مال مدفوع بقيمة 13.2 مليون دينار كويتي.
-                                  <br>السجل التجاري رقم السجل التجاري 112646 </p>
-                              </div>
-                              <ul class="info-list clearfix">
-                                  <li><i class="fas fa-map-marker-alt"></i>مجمع الصالحية، بوابة 1، الدور 5, الصالحية, الكويت</li>
-                                  <li><i class="fas fa-envelope"></i>Email <a href="mailto:info@ eradat.me">info@eradat.me</a></li>
-                                  <li><i class="fas fa-headphones"></i>Contact No. <a href="tel:+965 22396666"> 22396666 965+ </a></li>
-                              </ul>
-                              <ul class="social-links clearfix">
-                                <li><a href="https://twitter.com/Eradatkw"><i class="fab fa-twitter"></i></a></li>
-                                <li><a href="https://www.instagram.com/eradatkw/"><i class="fab fa-instagram"></i></a></li>
-                                <li><a href="https://www.linkedin.com/in/eradat-international-real-estate-5ab72127a"><i class="fab fa-linkedin-in"></i></a></li>
-                            </ul>
-                          </div>
-                      </div>
-                      <div class="col-lg-9 col-md-9 col-sm-12 footer-column">
-                          <div class="footer-widget links-widget ml-70">
-                              <div class="widget-title">
-                                  <h4> روابط مفيدة</h4>
-                              </div>
-                              <div class="widget-content">
-                                  <ul class="list clearfix">
-                                      <li><a href="index.html">الرئيسية</a></li>
-                                      <li><a href="about-2.html">من نحن</a></li>
-                                      <li><a href="project-element-1_ar.html">خصائص</a></li>
-                                      <li><a href="media.html">آخر الأخبار</a></li>
-                                      <li><a href="contact.html">اتصل بنا</a></li>
-                                  </ul>
-                              </div>
-                          </div>
-                          <div class="col-lg-6 col-md-6 col-sm-6 p-tb20">
-                            <div class="wt-icon-box-wraper left bdr-1 bdr-gray-dark p-tb15 p-lr10 clearfix ar-login-portal">
-                                <div class="icon-md site-text-primary">
-                                    <a href="https://eradatme.sharepoint.com/sites/Eradat-RealEstateInvestmentCompany">
-                                        <img src="assets/Images-Eradat/Favicons/sharepoint-logotype.png" alt="https://www.flaticon.com/free-icons/share title=share icons Share icons created by Freepik - Flaticon">
-                                    </a>
-                                </div>
-                                <div class="icon-content">
-                                    <a href="https://eradatme.sharepoint.com/sites/Eradat-RealEstateInvestmentCompany" class="sharepoint-link">
-                                        <h5 style="color: #fff;" class="wt-tilte text-uppercase m-b0">بوابة تسجيل الدخول </h5>
-                                        <p class="m-b0">الوصول هنا</p>
-                                    </a>
-                                </div>  
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                  </div>
-              </div>
+    <footer class="bg-black text-white" dir="rtl">
+      <div class="max-w-7xl mx-auto px-6 py-10 grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-24">
+    
+        <!-- Right Side: Logo + Info -->
+        <div class="space-y-6 text-right">
+          <a href="index_ar.html">
+            <img src="assets/Images-Eradat/Logo/Eradat_logos_-_black_and_white-removebg-preview.png" alt="Eradat Logo" class="h-20 md:h-24 ml-auto">
+          </a>
+          <p class="text-gray-300 text-sm leading-loose">
+            شركة إيرادات الدولية العقارية هي شركة كويتية مساهمة تأسست في عام 2006، برأس مال مدفوع بقيمة 13.2 مليون دينار كويتي.<br/>
+            رقم السجل التجاري: 112646
+          </p>
+          <ul class="space-y-2 text-gray-400 text-sm">
+            <li><i class="fas fa-map-marker-alt ml-2"></i> مجمع الصالحية، البوابة الأولى، الطابق الخامس، الصالحية، الكويت</li>
+            <li><i class="fas fa-envelope ml-2"></i> <a href="mailto:info@eradat.me" class="underline">info@eradat.me</a></li>
+            <li><i class="fas fa-phone-alt ml-2"></i> <a href="tel:+96522396666" class="underline">+965 22396666</a></li>
+          </ul>
+          <div class="flex space-x-4 justify-end flex-row-reverse mt-4">
+            <a href="https://twitter.com/Eradatkw" target="_blank" class="hover:text-[#9b8579]"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/eradatkw/" target="_blank" class="hover:text-[#9b8579]"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/eradat-international-real-estate-5ab72127a" target="_blank" class="hover:text-[#9b8579]"><i class="fab fa-linkedin-in"></i></a>
           </div>
-      </div>
-      <div class="footer-bottom">
-          <div class="auto-container">
-              <div class="copyright"><p>&copy; 2023 <a href="index_ar.html">ERADAT</a> - Real Estate Investment Company. All rights reserved.</p></div>
+        </div>
+    
+        <!-- Left Side: Useful Links + SharePoint -->
+        <div class="space-y-8 text-right flex flex-col justify-between">
+          <div>
+            <h4 class="text-lg font-semibold mb-4 text-white">روابط مفيدة</h4>
+            <ul class="space-y-2 text-sm">
+              <li><a href="index_ar.html" class="text-white hover:text-[#9b8579] transition-colors">الصفحة الرئيسية</a></li>
+              <li><a href="about-2_ar.html" class="text-white hover:text-[#9b8579] transition-colors">من نحن</a></li>
+              <li><a href="blog-grid_ar.html" class="text-white hover:text-[#9b8579] transition-colors">العقارات</a></li>
+              <li><a href="media_ar.html" class="text-white hover:text-[#9b8579] transition-colors">وسائل الإعلام</a></li>
+              <li><a href="contact_ar.html" class="text-white hover:text-[#9b8579] transition-colors">اتصل بنا</a></li>
+            </ul>
           </div>
+    
+          <!-- SharePoint Login -->
+          <div class="flex items-center justify-end space-x-4 flex-row-reverse">
+            <a href="https://eradatme.sharepoint.com/sites/Eradat-RealEstateInvestmentCompany" target="_blank">
+              <img src="assets/Images-Eradat/Favicons/sharepoint-logotype.png" alt="SharePoint" class="h-12">
+            </a>
+            <div>
+              <a href="https://eradatme.sharepoint.com/sites/Eradat-RealEstateInvestmentCompany" target="_blank" class="text-white text-sm font-semibold uppercase hover:text-[#9b8579]">
+                بوابة تسجيل الدخول
+              </a>
+              <p class="text-gray-400 text-xs">الوصول هنا</p>
+            </div>
+          </div>
+        </div>
+    
       </div>
-  </footer>
+    
+      <!-- Bottom Footer -->
+      <div class="border-t border-gray-700 mt-10">
+        <div class="text-center py-4 text-gray-500 text-xs">
+          &copy; 2023 <a href="index_ar.html" class="hover:underline">إيرادات</a> - جميع الحقوق محفوظة.
+        </div>
+      </div>
+    </footer>
     <!-- main-footer end -->
 
     <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1"
