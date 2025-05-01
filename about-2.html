@@ -154,11 +154,7 @@
           <h1 class="text-2xl font-semibold text-center text-gray-800 capitalize lg:text-3xl mb-8">
             Our Executive Leadership
           </h1>
-      
-          <!-- <p class="max-w-2xl mx-auto my-6 text-center text-gray-500 dark:text-gray-400">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo incidunt ex placeat modi magni quia error alias, adipisci rem similique, at omnis eligendi optio eos harum.
-          </p> -->
-      
+
           <div x-data="leadershipCarousel()" x-init="updateVisible()" @resize.window="updateVisible()" class="relative w-full overflow-hidden max-w-7xl mx-auto">
             <div class="flex transition-transform duration-700 ease-in-out"
                  :style="`transform: translateX(-${current * (100 / visible)}%)`">
@@ -172,8 +168,6 @@
                 </div>
               </template>
             </div>
-      
-            <!-- Left Button -->
 
               <!-- Left Button -->
           <div class="absolute inset-y-0 left-0 flex items-center">
